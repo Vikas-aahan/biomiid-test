@@ -1,0 +1,206 @@
+.banner_outer_grid{
+    background-color: #000066;
+    padding: 3rem;
+}
+.banner_heading{
+    font-size: 60px !important;
+    text-align: start;
+    color: white;
+    font-weight: 600 !important;
+}
+.banner_text{
+    color: white;
+    font-size: 20px !important;
+    text-align: start;
+}
+.banner_button_gettouch{
+    font-size: 20px !important;
+     background-color: #7F00FF !important ;
+    font-weight: 600 !important;
+    width: 18rem;
+    text-transform: none !important;
+}
+.banner_button_watch{
+    font-size: 20px !important;
+     background-color: #000066 !important ;
+     color: white !important;
+    font-weight: 600 !important;
+    width: 18rem;
+    text-transform: none !important;
+   border: solid !important;
+   border-radius: 10px !important;
+    
+}
+.banner_button_outer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner_grid_text{
+    padding: 3rem;
+}
+/* --------- Text banner bottom text --------- */
+.solution_heading{
+    font-size: 50px !important;
+    text-align: start;
+    font-weight: 600 !important;
+    color: #000066 !important;
+}
+.solution_paragrph{
+    font-size: 24px !important;
+    text-align: start;
+}
+.solution_heading_dif{
+    margin-top: 2rem !important;
+    font-size: 50px !important;
+    text-align: center;
+    font-weight: 600 !important;
+    color: #000066 !important;
+}
+.solution_heading_dif_head{
+    font-size: 42px !important;
+    text-align: start;
+    color: #000066 !important;
+    
+}
+.solution_outer_div{
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-top: 4rem;
+    margin-bottom:3rem ;
+}
+.solution_grid_head{
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #000066 !important;
+}
+.solution_grid_text{
+    padding-right: 32px !important;
+    font-size: 22px !important;
+    color: #707070 !important;
+}
+.solution_grid_text_outer{
+    text-align: start;
+    padding: 1rem;
+}
+/* <--------------------- card-sections ---------------> */
+.Industries_card_head{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    text-align: start;
+    margin-top: 20px !important;
+    color: #000066 !important;
+}
+.Industries_card{
+    padding: 2.5rem;
+    height: 100%;
+    width: 70%;
+    border: solid 2px !important ;
+    border-color: #b266fd !important;
+    border-radius: 20px !important;
+}
+.Industries_card_grid{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.Industries_button{
+    font-size: 20px !important;
+     background-color: #7F00FF !important ;
+    font-weight: 600 !important;
+    width: 45%;
+    text-transform: none !important;
+    padding: 2rem !important;
+    border-radius: 14px !important;
+}
+.individual_heading_dif_head{
+    font-size: 42px !important;
+    text-align: start;
+    color: #000066 !important;
+    display: flex;
+    align-items: center;
+    
+}
+.individual_textbottom_head{
+ text-align: start;
+ font-size: 30px !important;
+}
+.individual_textbottom_head_benefit{
+    font-size: 45px !important;
+    text-align: start;
+}
+.Individual_card{
+    padding: 2.5rem;
+    height: 85%;
+    width: 70%;
+    border: solid 2px !important ;
+    border-color: #b266fd !important;
+    border-radius: 20px !important;
+}
+.Individual_card_grid{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+.Organizations_button{
+    font-size: 20px !important;
+     background-color: #7F00FF !important ;
+    font-weight: 600 !important;
+    width: 40%;
+    text-transform: none !important;
+    padding: 1rem !important;
+    border-radius: 18px !important;
+}
+.About_button{
+    font-size: 20px !important;
+     background-color: #7F00FF !important ;
+    font-weight: 600 !important;
+    width: 30%;
+    text-transform: none !important;
+    padding: 12px !important;
+    border-radius: 14px !important;
+}
+@media  screen and (max-width: 600px) {
+    .banner_button_outer{
+        margin-top: 20px;
+        display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    }
+    .solution_outer_div{
+        padding: 1rem;
+    }
+    .solution_heading_dif{
+        font-size: 46px !important;
+        text-align: center;
+        font-weight: 600 !important;
+        color: #000066 !important;
+    }
+    .solution_grid_text_outer{
+        text-align: center;
+    }
+    .solution_grid_text{
+        padding-right: 0px !important;
+        font-size: 22px !important;
+        color: #707070 !important;
+    }
+    .Industries_button{
+        font-size: 20px !important;
+         background-color: #7F00FF !important ;
+        font-weight: 600 !important;
+        width: 100%;
+        text-transform: none !important;
+        padding: 2rem !important;
+        border-radius: 18px !important;
+    }
+}
+@media  screen and (max-width: 400px) {
+    .banner_heading{
+        font-size: 45px !important;
+        text-align: start;
+        color: white;
+        font-weight: 600 !important;
+    }
+    .banner_grid_text{
+        padding: 2rem;
+    }
+}

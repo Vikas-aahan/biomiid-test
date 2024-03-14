@@ -1,0 +1,26 @@
+.footer_outer_div{
+    background-color: #000066;
+}
+.logo_grid_footer{
+    padding: 2rem;
+}
+.tab_footer{
+    color: white;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    margin-top: 25px !important;
+    text-align: start;
+    
+}
+.tab_grid_footer{
+    padding: 2rem;
+}
+.lower_grid_footer{
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.icon_grid_footer{
+    text-align: start;
+    margin-top: 5rem;
+}
