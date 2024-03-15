@@ -1,17 +1,22 @@
 .banner_outer_grid{
     background-color: #000066;
-    padding: 3rem;
+    padding: 5rem;
 }
 .banner_heading{
-    font-size: 60px !important;
+    margin-top: 7rem !important;
+    font-size: 61px !important;
     text-align: start;
     color: white;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
+    font-family: arial, Helvetica, sans-serif !important;
+    line-height: 65px !important;
 }
 .banner_text{
+    margin-top: 1.5rem !important;
     color: white;
-    font-size: 20px !important;
+    font-size: 23px !important;
     text-align: start;
+
 }
 .banner_button_gettouch{
     font-size: 20px !important;
@@ -19,6 +24,7 @@
     font-weight: 600 !important;
     width: 18rem;
     text-transform: none !important;
+    border-radius: 12px !important;
 }
 .banner_button_watch{
     font-size: 20px !important;
@@ -31,13 +37,16 @@
    border-radius: 10px !important;
     
 }
+.banner_img{
+    width: 91%;
+}
 .banner_button_outer{
-    margin-top: 20px;
+    margin-top: 112px;
     display: flex;
     justify-content: space-between;
 }
 .banner_grid_text{
-    padding: 3rem;
+   
 }
 /* --------- Text banner bottom text --------- */
 .solution_heading{
@@ -47,41 +56,62 @@
     color: #000066 !important;
 }
 .solution_paragrph{
+    margin-top: 2rem !important;
     font-size: 24px !important;
     text-align: start;
+    line-height: 28px !important;
 }
 .solution_heading_dif{
-    margin-top: 2rem !important;
+    margin-top: 5rem !important;
     font-size: 50px !important;
     text-align: center;
     font-weight: 600 !important;
     color: #000066 !important;
 }
 .solution_heading_dif_head{
-    font-size: 42px !important;
+    margin-top: 2rem !important;
+    font-size: 50px !important;
     text-align: start;
     color: #000066 !important;
+    font-family: Arial !important;
     
 }
 .solution_outer_div{
     padding-left: 7rem;
     padding-right: 7rem;
-    margin-top: 4rem;
+    margin-top: 0rem;
     margin-bottom:3rem ;
 }
 .solution_grid_head{
     font-size: 28px !important;
     font-weight: 600 !important;
     color: #000066 !important;
+    line-height: 30px !important;
+    
 }
 .solution_grid_text{
     padding-right: 32px !important;
-    font-size: 22px !important;
-    color: #707070 !important;
+    font-size: 20px !important;
+    color: #686767 !important;
 }
 .solution_grid_text_outer{
     text-align: start;
     padding: 1rem;
+}
+.solution_card_logo{
+    width: 16%;
+}
+.solution_card{
+    padding: 8px;
+    width: 80%;
+    border: solid 6px !important ;
+    border-color: #7F00FF !important;
+    border-radius: 20px !important;
+}
+.solution_outer_grid_card{
+    row-gap: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 /* <--------------------- card-sections ---------------> */
 .Industries_card_head{
@@ -93,14 +123,14 @@
 }
 .Industries_card{
     padding: 2.5rem;
-    height: 100%;
+    height: 85%;
     width: 70%;
     border: solid 2px !important ;
     border-color: #b266fd !important;
     border-radius: 20px !important;
 }
 .Industries_card_grid{
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 .Industries_button{
@@ -118,11 +148,13 @@
     color: #000066 !important;
     display: flex;
     align-items: center;
+    line-height: 42px !important;
     
 }
 .individual_textbottom_head{
  text-align: start;
  font-size: 30px !important;
+ line-height: 34px !important;
 }
 .individual_textbottom_head_benefit{
     font-size: 45px !important;
@@ -130,15 +162,18 @@
 }
 .Individual_card{
     padding: 2.5rem;
-    height: 85%;
+    height: 84%;
     width: 70%;
     border: solid 2px !important ;
     border-color: #b266fd !important;
     border-radius: 20px !important;
 }
 .Individual_card_grid{
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 0rem;
+}
+.Individuals_logo{
+    width: 10% !important;
 }
 .Organizations_button{
     font-size: 20px !important;
@@ -158,9 +193,160 @@
     padding: 12px !important;
     border-radius: 14px !important;
 }
-@media  screen and (max-width: 600px) {
+.outer_div_contact{
+    background-color: #eae9e9;
+}
+/* <---------------------  Contact section ----------------------> */
+
+.contact_heading{
+
+}
+@media  screen and (max-width: 1280px) {
+    .individual_textbottom_head{
+        text-align: start;
+        font-size: 28px !important;
+        line-height: 34px !important;
+       }
+    .Individuals_logo{
+        width: 9% !important;
+    }
+    .Industries_button{
+        font-size: 16px !important;
+         background-color: #7F00FF !important ;
+        font-weight: 600 !important;
+        width: 45%;
+        text-transform: none !important;
+        padding: 2rem !important;
+        border-radius: 14px !important;
+    }
+    .Industries_card_head{
+        font-size: 21px !important;
+        font-weight: 600 !important;
+        text-align: start;
+        margin-top: 20px !important;
+        color: #000066 !important;
+    }
+    .solution_grid_text{
+        padding-right: 32px !important;
+        font-size: 19px !important;
+        color: #686767 !important;
+    }
+    .solution_grid_head{
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        color: #000066 !important;
+        line-height: 24px !important;
+    }
     .banner_button_outer{
-        margin-top: 20px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner_text{
+        margin-top: 1.5rem !important;
+        color: white;
+        font-size: 18px !important;
+        text-align: start;
+    
+    }
+    .banner_heading{
+        margin-top: 5rem !important;
+    font-size: 50px !important;
+    text-align: start;
+    color: white;
+    font-weight: 400 !important;
+    font-family: arial, Helvetica, sans-serif !important;
+    line-height: 65px !important;
+    }
+    .banner_button_gettouch{
+        font-size: 20px !important;
+         background-color: #7F00FF !important ;
+        font-weight: 600 !important;
+        width: 16rem;
+        text-transform: none !important;
+    }
+    .banner_button_watch{
+        font-size: 20px !important;
+         background-color: #000066 !important ;
+         color: white !important;
+        font-weight: 600 !important;
+        width: 16rem;
+        text-transform: none !important;
+       border: solid !important;
+       border-radius: 10px !important;
+        
+    }
+}
+@media  screen and (max-width: 900px) {
+    .banner_grid_img{
+        margin-top: 3rem !important;
+    }
+    .banner_button_outer{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .Individual_card_grid{
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+        display: flex;
+    justify-content: space-around;
+    }
+    .individual_textbottom_head{
+        text-align: start;
+        font-size: 20px !important;
+        line-height: 26px !important;
+       }
+    .Individuals_logo{
+        width: 15% !important;
+    }
+    .Industries_card_grid{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    
+   
+    .solution_paragrph{
+        margin-top: 1rem !important;
+        font-size: 18px !important;
+        text-align: start;
+        line-height: 28px !important;
+    }
+    .solution_heading_dif_head{
+        margin-top: 1rem !important;
+        font-size: 24px !important;
+        text-align: start;
+        color: #000066 !important;
+        font-family: Arial !important;
+        
+    }
+    .solution_grid_head{
+        font-size: 24px !important;
+        font-weight: 600 !important;
+        color: #000066 !important;
+        line-height: 24px !important;
+    }
+    .banner_heading{
+        margin-top: 4rem !important;
+        font-size: 43px !important;
+        text-align: start;
+        color: white;
+        font-weight: 400 !important;
+        font-family: arial, Helvetica, sans-serif !important;
+        line-height: 65px !important;
+    }
+    .banner_text{
+        margin-top: 1.5rem !important;
+        font-size: 16px !important;
+        
+    }
+    .banner_grid_img{
+        margin-top: 3rem !important;
+    }
+    .banner_button_outer{
+        margin-top: 34px;
         display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -170,7 +356,7 @@
         padding: 1rem;
     }
     .solution_heading_dif{
-        font-size: 46px !important;
+        font-size: 36px !important;
         text-align: center;
         font-weight: 600 !important;
         color: #000066 !important;
@@ -180,11 +366,11 @@
     }
     .solution_grid_text{
         padding-right: 0px !important;
-        font-size: 22px !important;
-        color: #707070 !important;
+        font-size: 19px !important;
+        color: #686767 !important;
     }
     .Industries_button{
-        font-size: 20px !important;
+        font-size: 16px !important;
          background-color: #7F00FF !important ;
         font-weight: 600 !important;
         width: 100%;
@@ -192,15 +378,80 @@
         padding: 2rem !important;
         border-radius: 18px !important;
     }
+    .Organizations_button{
+        font-size: 20px !important;
+         background-color: #7F00FF !important ;
+        font-weight: 600 !important;
+        width: 100%;
+        text-transform: none !important;
+        padding: 1rem !important;
+        border-radius: 18px !important;
+    }
+    .individual_heading_dif_head{
+        font-size: 34px !important;
+        text-align: start;
+        color: #000066 !important;
+        display: flex;
+        align-items: center;
+        line-height: 38px !important;
+        
+    }
+    .banner_outer_grid{
+        background-color: #000066;
+        padding: 1rem;
+    }
+    .solution_outer_grid_card{
+        row-gap: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+    .solution_grid_card{
+        display: ruby;
+    }
 }
 @media  screen and (max-width: 400px) {
+    .individual_heading_dif_head{
+        font-size: 28px !important;
+        text-align: start;
+        color: #000066 !important;
+        display: flex;
+        align-items: center;
+        
+    }
+    .Industries_button{
+        font-size: 12px !important;
+         background-color: #7F00FF !important ;
+        font-weight: 600 !important;
+        width: 100%;
+        text-transform: none !important;
+        padding: 1.5rem !important;
+        border-radius: 18px !important;
+    }
+    .solution_outer_grid_card{
+        row-gap: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .solution_grid_head{
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        color: #000066 !important;
+    }
     .banner_heading{
-        font-size: 45px !important;
+        margin-top: 2rem !important;
+        font-size: 43px !important;
         text-align: start;
         color: white;
-        font-weight: 600 !important;
+        font-weight: 400 !important;
+        font-family: arial, Helvetica, sans-serif !important;
+        line-height: 65px !important;
     }
     .banner_grid_text{
-        padding: 2rem;
+        padding: 0rem;
+    }
+    .banner_text{
+        margin-top: 1.5rem !important;
+        font-size: 13px !important;
+        
     }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "../../Css/home.module.css";
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Card, Grid, Typography } from "@mui/material";
 import idImg from "../../Images/illustration2.jpg";
 import bioImg from "../../Images/illustration1.jpg";
 import didnImg from "../../Images/illustration3.jpg";
@@ -13,7 +13,10 @@ import didnLogo from "../../Images/digital_id.png";
 export default function OurSolution() {
   return (
     <div className={Style.solution_outer_div}>
-      <Typography className={Style.solution_heading}>
+      <Typography className={Style.solution_heading_dif}>
+        Our Solutions
+      </Typography>
+      <Typography className={Style.solution_heading_dif_head}>
         Ensuring Certainty in Digital Identity
       </Typography>
       <Typography className={Style.solution_paragrph}>
@@ -24,17 +27,57 @@ export default function OurSolution() {
         verification to facial biometric authentication, we offer future-proof
         solutions tailored to meet the KYC and IAM needs of diverse industries.
       </Typography>
-      <Typography className={Style.solution_heading_dif}>
-        Our Solutions
-      </Typography>
+
       <Typography className={Style.solution_heading_dif_head}>
-        Our Innovative Solutions: Empowering Trust & Security
+        Empowering Trust & Security
       </Typography>
       <Typography className={Style.solution_paragrph}>
-        we're committed to crafting solutions that redefine the digital
-        landscape, ensuring seamless experiences while safeguarding identities
-        with unparalleled security.
+        We are committed to crafting Identity solutions that redefine the
+        digital landscape, ensuring unprecedented convenience, trust and
+        security while safeguarding individuals privacy across the globe.
       </Typography>
+      <Grid container  className={Style.solution_outer_grid_card}>
+        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
+          <Card variant="outlined" className={Style.solution_card}>
+            <div style={{display:"flex",alignItems:"center"}}>
+              <img className={Style.solution_card_logo} src={idLogo} />{" "}&nbsp;&nbsp;
+              <Typography className={Style.solution_grid_head}>
+                eID Verification
+              </Typography>
+            </div>
+          </Card>
+        </Grid>
+        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
+          <Card variant="outlined" className={Style.solution_card}>
+            <div style={{display:"flex",alignItems:"center"}}>
+              <img className={Style.solution_card_logo} src={IdenLogo} />{" "}&nbsp;&nbsp;
+              <Typography className={Style.solution_grid_head}>
+              Identity Verification
+              </Typography>
+            </div>
+          </Card>
+        </Grid>
+        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
+          <Card variant="outlined" className={Style.solution_card}>
+            <div style={{display:"flex",alignItems:"center"}}>
+              <img className={Style.solution_card_logo} src={bioLogo} />{" "}&nbsp;&nbsp;
+              <Typography className={Style.solution_grid_head}>
+              Biometric Authentication
+              </Typography>
+            </div>
+          </Card>
+        </Grid>
+        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
+          <Card variant="outlined" className={Style.solution_card}>
+            <div style={{display:"flex",alignItems:"center"}}>
+              <img className={Style.solution_card_logo} src={didnLogo} />{" "}&nbsp;&nbsp;
+              <Typography className={Style.solution_grid_head}>
+              Digital identity Network
+              </Typography>
+            </div>
+          </Card>
+        </Grid>
+      </Grid>
       {/* <----------------------  Image/Text-Section -----------------> */}
       <Grid container>
         <Grid lg={12} md={12} xs={12}>
@@ -136,8 +179,8 @@ export default function OurSolution() {
           </Typography>
         </Grid>
 
-        <Grid lg={6} md={12} xs={12}>
-          <img style={{ width: "85%" }} src={didnImg} />
+        <Grid lg={6} md={12} xs={12} >
+          <img  style={{ width: "85%" ,marginTop:"4rem"}} src={didnImg} />
         </Grid>
         <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={didnLogo} />
@@ -152,7 +195,7 @@ export default function OurSolution() {
             data breaches, identity theft, fraud, and synthetic identity
             threats. With unmatched convenience, accuracy, and adaptability,
             trust BIOMIID to safeguard your digital journey.
-          </Typography>
+          </Typography><br/>
           <Typography className={Style.solution_grid_text}>
             Join us in shaping a secure future where digital interactions are
             not only effortless but also fortified with unparalleled trust and

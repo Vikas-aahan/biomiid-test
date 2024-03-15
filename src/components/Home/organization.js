@@ -19,8 +19,8 @@ export default function Individuals() {
         Organizations
       </Typography>
       <Typography className={Style.individual_heading_dif_head}>
-        {/* <img src={indiImg} />
-        &nbsp;  */}
+        <img className={Style.Individuals_logo} src={indiImg} />
+        &nbsp; 
         Empower Your Enterprise:Certainty in Identity, Security, and
         Compliance
       </Typography>
@@ -43,7 +43,7 @@ export default function Individuals() {
               Fraud Prevention
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Safeguard your transactions with our robust solutions, preventing
               payment fraud and securing card-not-present (CNP) payments by
@@ -59,7 +59,7 @@ export default function Individuals() {
               Account Protection
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Defend against online threats such as account takeover with our
               advanced identity verification and biometric authentication tools,
@@ -74,7 +74,7 @@ export default function Individuals() {
               Document Verification
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Swiftly verify identity documents from any location, establishing
               a trusted and secure digital identity that replaces cumbersome
@@ -89,7 +89,7 @@ export default function Individuals() {
               Enhanced Onboarding
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Streamline the onboarding process for new users, instilling trust
               with seamless identity verification and reducing operational costs
@@ -104,7 +104,7 @@ export default function Individuals() {
               Regulatory Compliance
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Ensure compliance with stringent KYC and AML regulations
               effortlessly, leveraging our reliable and trusted digital identity
@@ -119,7 +119,7 @@ export default function Individuals() {
               Improved Conversions
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Enhance customer acquisition and conversion rates with a
               streamlined experience, featuring automatic population of customer
@@ -134,7 +134,7 @@ export default function Individuals() {
               Identity Protection
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Mitigate the risks of identity fraud and theft through biometric
               authentication and accurate instant identity verification,
@@ -149,7 +149,7 @@ export default function Individuals() {
               Privacy and Security
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Prioritize privacy by design with our solutions, allowing
               individuals to control the sharing of their identity data and
@@ -164,7 +164,7 @@ export default function Individuals() {
               Global Interoperability
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
             >
               Embrace interoperability across network participants with
               transparent standards, supporting diverse use cases and ensuring
@@ -179,7 +179,7 @@ export default function Individuals() {
       <Typography className={Style.solution_heading_dif_head}>
         Join the Secure Future with BIOMIID
       </Typography><br/>
-      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "24px" }}>
+      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}>
         Are you ready to step boldly into the future of security and resilience?
         Join BIOMIID's Digital Identity Network and become an integral part of
         the global fight against cybercrime.<br/><br/>As businesses or government
@@ -191,7 +191,7 @@ export default function Individuals() {
         safeguard our digital ecosystem. Together, let's forge ahead and pave
         the way for a future where security is paramount and resilience is
         assured.<br/><br/> Become a Partner with BIOMIID today and be at the forefront of shaping a secure and resilient future for all.
-      </Typography><br/><br/>
+      </Typography><br/><br/><br/><br/>
       <Button
             variant="contained"
             size="large"

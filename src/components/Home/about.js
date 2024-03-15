@@ -6,34 +6,34 @@ import rightImg from "../../Images/verify.png";
 export default function About() {
   return (
     <div className={Style.solution_outer_div}>
-      <Typography className={Style.solution_heading_dif}>Abour Us</Typography>
+      <Typography className={Style.solution_heading_dif}>About Us</Typography>
       <br />
       <br />
-      <Typography className={Style.solution_heading_dif_head}>
-        "Revolutionizing Digital Identity: Easy, Secure Access for All!"
-      </Typography>
       <br />
-      <Typography sx={{ fontSize: "20px", textAlign: "start" }}>
+      
+      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}>
         We're a passionate group driven by two things: Security and Innovation!
       </Typography>
       <Typography
-        sx={{ fontSize: "20px", textAlign: "start", marginTop: "1rem" }}
+        sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"24px"}}
       >
         We believe that a strong digital identity is the cornerstone of a safe
         and trusted online world.
       </Typography>
       <Typography
-        sx={{ fontSize: "20px", textAlign: "start", marginTop: "1rem" }}
+        sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"24px" }}
       >
         The{" "}
-        <span style={{ fontWeight: "600", color: "#000066" }}>problem </span>?
+        problem ?
         Existing verification systems are clunky, expensive, and leave everyone
         vulnerable – individuals, businesses, and organizations alike.
-        <br />
+        
         That's why we built BIOMID. Here our mission is to create the most
         user-friendly, reliable, and privacy-conscious digital identity
         ecosystem in the world.
       </Typography>
+      <br />
+      <br />
       <br />
       <br />
       <Typography className={Style.solution_heading_dif_head}>
@@ -85,12 +85,14 @@ export default function About() {
         </Grid>
       </Grid>
       <br/>
-    <Typography sx={{ fontSize: "20px", textAlign: "start", marginTop: "3rem" }}>Together, let's build a secure and thriving digital future.</Typography>
-    <Typography sx={{ fontSize: "20px", textAlign: "start", marginTop: "0rem" }}>Ready to experience secure and seamless digital identity? Contact us today!</Typography><br/><br/>
+      <br/>
+      
+    <Typography sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"20px" }}>Together, let's build a secure and thriving digital future.</Typography>
+    <Typography sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"20px" }}>Ready to experience secure and seamless digital identity? Contact us today!</Typography><br/><br/>
     <Typography className={Style.solution_heading_dif_head}>
     Careers  at BIOMIID
       </Typography>
-      <Typography sx={{ fontSize: "20px", textAlign: "start", marginTop: "3rem",marginBottom:"5rem" }}>If you share BIOMIID's vision and would like to join our team in the fight against cybercrime in the digital world, please apply and share your contact details. Let us know if you are interested in joining us, and we will contact you as soon as possible!</Typography>
+      <Typography sx={{ textAlign: "start", marginTop: "28px", fontSize: "22px" ,lineHeight:"26px" ,marginBottom:"5rem" }}>If you share BIOMIID's vision and would like to join our team in the fight against cybercrime in the digital world, please apply and share your contact details. Let us know if you are interested in joining us, and we will contact you as soon as possible!</Typography>
       <Button
             variant="contained"
             size="large"

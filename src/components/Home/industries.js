@@ -16,7 +16,7 @@ export default function Industries() {
         Empowering Industries with Trusted Solutions
       </Typography>
       <Typography
-        sx={{ textAlign: "start", fontWeight: "600", fontSize: "24px" }}
+        sx={{ textAlign: "start", fontWeight: "600", fontSize: "28px" }}
       >
         Industries We Serve :
       </Typography>

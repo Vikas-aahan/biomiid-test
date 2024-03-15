@@ -7,14 +7,15 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../Images/logo_white.png";
+import Style from "../Css/common.module.css";
+import PopupState, { bindToggle, bindPopper } from 'material-ui-popup-state';
+import Fade from '@mui/material/Fade';
+import Paper from '@mui/material/Paper';
+import Popper from '@mui/material/Popper';
 
-const pages = ["Products", "Pricing", "Blog"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -47,7 +48,7 @@ function ResponsiveAppBar() {
               width: "25%",
             }}
           >
-            <img style={{ width: "50%" }} src={logo} />
+            <img style={{ width: "57%" }} src={logo} />
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -102,11 +103,15 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               columnGap: "20px",
-              marginLeft: "3rem",
+              marginLeft: "0rem",
             }}
           >
-            <Button
-              onClick={handleCloseNavMenu}
+           
+            <PopupState variant="popper" popupId="demo-popup-popper">
+      {(popupState) => (
+        <div>
+        <Button
+               {...bindToggle(popupState)}
               sx={{
                 my: 2,
                 color: "white",
@@ -118,6 +123,23 @@ function ResponsiveAppBar() {
             >
               Solutions
             </Button>
+          <Popper {...bindPopper(popupState)} transition >
+            {({ TransitionProps }) => (
+              <Fade {...TransitionProps} timeout={350}>
+                <Paper sx={{padding:"10px",width:"18rem",borderRadius:"20px"}}>
+                  <Typography sx={{  color: "#000066" ,fontWeight:"600",lineHeight:"38px",marginLeft:"20px"}}>eID Verification</Typography>
+                  <Typography sx={{ color: "#000066" ,fontWeight:"600",lineHeight:"38px",marginLeft:"20px"}}>Identity Verification</Typography>
+                  <Typography sx={{ color: "#000066" ,fontWeight:"600",lineHeight:"38px",marginLeft:"20px"}}>Biometric Authentification</Typography>
+                  <Typography sx={{ color: "#000066" ,fontWeight:"600",lineHeight:"38px",marginLeft:"20px"}}>Digital Identity  Network</Typography>
+                  <Typography sx={{ color: "#000066" ,fontWeight:"600",lineHeight:"0px"}}>________________________________</Typography>
+                  <Typography sx={{ color: "#000066" ,fontWeight:"600",lineHeight:"50px",marginLeft:"20px"}}>Industries</Typography>
+                </Paper>
+              </Fade>
+            )}
+          </Popper>
+        </div>
+      )}
+    </PopupState>
             <Button
               onClick={handleCloseNavMenu}
               sx={{
@@ -158,18 +180,8 @@ function ResponsiveAppBar() {
               About
             </Button>
             <Button
-              sx={{
-                my: 2,
-                width: "24%",
-                height: "25%",
-                color: "white",
-                display: "block",
-                textTransform: "capitalize",
-                fontWeight: "600",
-                background: "#7F00FF",
-                fontSize: "20px",
-                borderRadius: "10px",
-              }}
+                className={Style.header_contact_button}
+              
             >
               Contact Us
             </Button>
@@ -213,7 +225,10 @@ function ResponsiveAppBar() {
             </Menu> */}
           </Box>
         </Toolbar>
+
       </Container>
+     
+
     </AppBar>
   );
 }
