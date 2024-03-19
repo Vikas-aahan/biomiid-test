@@ -1,457 +1,544 @@
-.banner_outer_grid{
-    background-color: #000066;
-    padding: 5rem;
+.banner_outer_grid {
+  background-color: #000066;
+  padding: 5rem;
 }
-.banner_heading{
-    margin-top: 7rem !important;
-    font-size: 61px !important;
-    text-align: start;
-    color: white;
-    font-weight: 400 !important;
-    font-family: arial, Helvetica, sans-serif !important;
-    line-height: 65px !important;
+.banner_heading {
+  margin-top: 0rem !important;
+  font-size: 70px !important;
+  text-align: start;
+  color: white;
+  font-weight: 600 !important;
+  font-family: arial, Helvetica, sans-serif !important;
+  line-height: 74px !important;
 }
-.banner_text{
-    margin-top: 1.5rem !important;
-    color: white;
-    font-size: 23px !important;
-    text-align: start;
+.banner_text {
+  margin-top: 1.5rem !important;
+  color: white;
+  font-size: 23px !important;
+  text-align: start;
 
 }
-.banner_button_gettouch{
-    font-size: 20px !important;
-     background-color: #7F00FF !important ;
-    font-weight: 600 !important;
-    width: 18rem;
-    text-transform: none !important;
-    border-radius: 12px !important;
+.banner_button_gettouch {
+  font-size: 20px !important;
+  background-color: #7f00ff !important ;
+  font-weight: 600 !important;
+  width: 18rem;
+  text-transform: none !important;
+  border-radius: 12px !important;
 }
-.banner_button_watch{
-    font-size: 20px !important;
-     background-color: #000066 !important ;
-     color: white !important;
-    font-weight: 600 !important;
-    width: 18rem;
-    text-transform: none !important;
-   border: solid !important;
-   border-radius: 10px !important;
-    
+.banner_button_watch {
+  font-size: 20px !important;
+  background-color: #000066 !important ;
+  color: white !important;
+  font-weight: 600 !important;
+  width: 18rem;
+  text-transform: none !important;
+  border: solid !important;
+  border-radius: 10px !important;
 }
-.banner_img{
-    width: 91%;
+.banner_img {
+  width: 75%;
 }
-.banner_button_outer{
-    margin-top: 112px;
-    display: flex;
-    justify-content: space-between;
+.banner_button_outer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
-.banner_grid_text{
-   
+.banner_grid_text {
 }
 /* --------- Text banner bottom text --------- */
-.solution_heading{
-    font-size: 50px !important;
-    text-align: start;
-    font-weight: 600 !important;
-    color: #000066 !important;
+.solution_heading {
+  font-size: 50px !important;
+  text-align: start;
+  font-weight: 600 !important;
+  color: #000066 !important;
 }
-.solution_paragrph{
-    margin-top: 2rem !important;
-    font-size: 24px !important;
-    text-align: start;
-    line-height: 28px !important;
+.solution_paragrph {
+  margin-top: 1rem !important;
+  font-size: 20px !important;
+  text-align: start;
+  line-height: 28px !important;
 }
-.solution_heading_dif{
-    margin-top: 5rem !important;
-    font-size: 50px !important;
-    text-align: center;
-    font-weight: 600 !important;
-    color: #000066 !important;
+.solution_heading_dif {
+  margin-top: 1rem !important;
+  font-size: 54px !important;
+  text-align: center;
+  font-weight: 600 !important;
+  color: #000066 !important;
+
 }
-.solution_heading_dif_head{
-    margin-top: 2rem !important;
-    font-size: 50px !important;
-    text-align: start;
-    color: #000066 !important;
-    font-family: Arial !important;
-    
+.solution_heading_dif_head {
+  margin-top: 2rem !important;
+  font-size: 40px !important;
+  text-align: start;
+  color: #000066 !important;
+  font-family: Arial !important;
 }
-.solution_outer_div{
-    padding-left: 7rem;
-    padding-right: 7rem;
-    margin-top: 0rem;
-    margin-bottom:3rem ;
+.solution_outer_div {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
 }
-.solution_grid_head{
-    font-size: 28px !important;
-    font-weight: 600 !important;
-    color: #000066 !important;
-    line-height: 30px !important;
-    
+.solution_grid_head {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: #000066 !important;
+  line-height: 30px !important;
 }
-.solution_grid_text{
-    padding-right: 32px !important;
-    font-size: 20px !important;
-    color: #686767 !important;
+.solution_grid_text {
+  margin-top: 12px !important;
+  padding-right: 32px !important;
+  font-size: 20px !important;
+  color: #686767 !important;
 }
-.solution_grid_text_outer{
-    text-align: start;
-    padding: 1rem;
+.solution_grid_text_outer {
+  text-align: start;
+  padding: 1rem;
 }
-.solution_card_logo{
-    width: 16%;
+.solution_card_logo {
+  width: 16%;
 }
-.solution_card{
-    padding: 8px;
-    width: 80%;
-    border: solid 6px !important ;
-    border-color: #7F00FF !important;
-    border-radius: 20px !important;
+.solution_card {
+  padding: 8px;
+  width: 80%;
+  border: solid 6px !important ;
+  border-color: #7f00ff !important;
+  border-radius: 20px !important;
 }
-.solution_outer_grid_card{
-    row-gap: 5rem;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+.solution_outer_grid_card {
+  row-gap: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 /* <--------------------- card-sections ---------------> */
-.Industries_card_head{
-    font-size: 24px !important;
-    font-weight: 600 !important;
+.Industries_card_head {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  text-align: start;
+  margin-top: 20px !important;
+  color: #000066 !important;
+}
+.Industries_card {
+  padding: 2.5rem;
+  height: 85%;
+  width: 70%;
+  border: solid 2px !important ;
+  border-color: #b266fd !important;
+  border-radius: 20px !important;
+}
+.Industries_card_grid {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.Industries_button {
+  font-size: 20px !important;
+  background-color: #7f00ff !important ;
+  font-weight: 600 !important;
+  width: 45%;
+  text-transform: none !important;
+  padding: 2rem !important;
+  border-radius: 14px !important;
+}
+.individual_heading_dif_head {
+  font-size: 42px !important;
+  text-align: start;
+  color: #000066 !important;
+  display: flex;
+  align-items: center;
+  line-height: 42px !important;
+}
+.individual_textbottom_head {
+  text-align: start;
+  font-size: 30px !important;
+  line-height: 34px !important;
+}
+.individual_textbottom_head_benefit {
+  font-size: 45px !important;
+  text-align: start;
+}
+.Individual_card {
+  padding: 1.5rem;
+  height: 84%;
+  width: 70%;
+  border: solid 2px !important ;
+  border-color: #b266fd !important;
+  border-radius: 20px !important;
+}
+.Individual_card_grid {
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+}
+.Individuals_logo {
+  width: 10% !important;
+}
+.Organizations_button {
+  font-size: 20px !important;
+  background-color: #7f00ff !important ;
+  font-weight: 600 !important;
+  width: 40%;
+  text-transform: none !important;
+  padding: 1rem !important;
+  border-radius: 18px !important;
+}
+.About_button {
+  font-size: 20px !important;
+  background-color: #7f00ff !important ;
+  font-weight: 600 !important;
+  width: 30%;
+  text-transform: none !important;
+  padding: 12px !important;
+  border-radius: 14px !important;
+}
+.about_card{
+  padding: 1.5rem;
+  height: 100%;
+  width: 80%;
+  border: solid 2px !important ;
+  border-color: #b266fd !important;
+  border-radius: 20px !important;
+}
+.Individual_card_grid_outer{
+  margin-bottom: 6rem;
+}
+
+/* <---------------------  Contact section ----------------------> */
+.contact_card{
+    max-width: 50rem !important;
+     margin: auto  !important; 
+     padding-left: 8rem;
+     padding-right: 8rem;
+     border-radius: 50px !important;
+     border: solid 3px !important;
+     border-color: #d9d9d9db !important;
+}
+.outer_div_contact {
+  background-color: #f2f2f2;
+ 
+}
+.contact_heading {
+  margin-top: 1.5rem !important;
+  font-size: 36px !important;
+  text-align: start;
+  color: #000000 !important;
+  font-family: Arial !important;
+  font-weight: 600 !important;
+}
+.contact_text {
+  text-align: start;
+  margin-top: 24px !important;
+  font-size: 20px !important;
+  line-height: 26px !important;
+  margin-bottom: 2rem !important;
+}
+.contact_radio_outer{
+  display: table-cell !important;
+}
+.contact_form_outer_grid{
+  grid-row-gap: 1rem;
+    grid-column-gap: 4rem
+}
+.contact_button{
+  font-size: 20px !important;
+  background-color: #7f00ff !important ;
+  font-weight: 600 !important;
+  width: 50%;
+  text-transform: none !important;
+  padding: 12px !important;
+  border-radius: 14px !important;
+}
+@media screen and (max-width: 1280px) {
+  .individual_textbottom_head {
     text-align: start;
-    margin-top: 20px !important;
-    color: #000066 !important;
-}
-.Industries_card{
-    padding: 2.5rem;
-    height: 85%;
-    width: 70%;
-    border: solid 2px !important ;
-    border-color: #b266fd !important;
-    border-radius: 20px !important;
-}
-.Industries_card_grid{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-.Industries_button{
-    font-size: 20px !important;
-     background-color: #7F00FF !important ;
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+  .Individuals_logo {
+    width: 9% !important;
+  }
+  .Industries_button {
+    font-size: 16px !important;
+    background-color: #7f00ff !important ;
     font-weight: 600 !important;
     width: 45%;
     text-transform: none !important;
     padding: 2rem !important;
     border-radius: 14px !important;
-}
-.individual_heading_dif_head{
-    font-size: 42px !important;
+  }
+  .Industries_card_head {
+    font-size: 21px !important;
+    font-weight: 600 !important;
     text-align: start;
+    margin-top: 20px !important;
     color: #000066 !important;
+  }
+  .solution_grid_text {
+    padding-right: 32px !important;
+    font-size: 19px !important;
+    color: #686767 !important;
+  }
+  .solution_grid_head {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #000066 !important;
+    line-height: 24px !important;
+  }
+  .banner_button_outer {
+    margin-top: 80px;
     display: flex;
-    align-items: center;
-    line-height: 42px !important;
-    
-}
-.individual_textbottom_head{
- text-align: start;
- font-size: 30px !important;
- line-height: 34px !important;
-}
-.individual_textbottom_head_benefit{
-    font-size: 45px !important;
+    justify-content: space-between;
+  }
+  .banner_text {
+    margin-top: 1.5rem !important;
+    color: white;
+    font-size: 18px !important;
     text-align: start;
-}
-.Individual_card{
-    padding: 2.5rem;
-    height: 84%;
-    width: 70%;
-    border: solid 2px !important ;
-    border-color: #b266fd !important;
-    border-radius: 20px !important;
-}
-.Individual_card_grid{
-    margin-top: 3rem;
-    margin-bottom: 0rem;
-}
-.Individuals_logo{
-    width: 10% !important;
-}
-.Organizations_button{
-    font-size: 20px !important;
-     background-color: #7F00FF !important ;
-    font-weight: 600 !important;
-    width: 40%;
-    text-transform: none !important;
-    padding: 1rem !important;
-    border-radius: 18px !important;
-}
-.About_button{
-    font-size: 20px !important;
-     background-color: #7F00FF !important ;
-    font-weight: 600 !important;
-    width: 30%;
-    text-transform: none !important;
-    padding: 12px !important;
-    border-radius: 14px !important;
-}
-.outer_div_contact{
-    background-color: #eae9e9;
-}
-/* <---------------------  Contact section ----------------------> */
-
-.contact_heading{
-
-}
-@media  screen and (max-width: 1280px) {
-    .individual_textbottom_head{
-        text-align: start;
-        font-size: 28px !important;
-        line-height: 34px !important;
-       }
-    .Individuals_logo{
-        width: 9% !important;
-    }
-    .Industries_button{
-        font-size: 16px !important;
-         background-color: #7F00FF !important ;
-        font-weight: 600 !important;
-        width: 45%;
-        text-transform: none !important;
-        padding: 2rem !important;
-        border-radius: 14px !important;
-    }
-    .Industries_card_head{
-        font-size: 21px !important;
-        font-weight: 600 !important;
-        text-align: start;
-        margin-top: 20px !important;
-        color: #000066 !important;
-    }
-    .solution_grid_text{
-        padding-right: 32px !important;
-        font-size: 19px !important;
-        color: #686767 !important;
-    }
-    .solution_grid_head{
-        font-size: 22px !important;
-        font-weight: 600 !important;
-        color: #000066 !important;
-        line-height: 24px !important;
-    }
-    .banner_button_outer{
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .banner_text{
-        margin-top: 1.5rem !important;
-        color: white;
-        font-size: 18px !important;
-        text-align: start;
-    
-    }
-    .banner_heading{
-        margin-top: 5rem !important;
+  }
+  .banner_heading {
+    margin-top: 5rem !important;
     font-size: 50px !important;
     text-align: start;
     color: white;
     font-weight: 400 !important;
     font-family: arial, Helvetica, sans-serif !important;
     line-height: 65px !important;
-    }
-    .banner_button_gettouch{
-        font-size: 20px !important;
-         background-color: #7F00FF !important ;
-        font-weight: 600 !important;
-        width: 16rem;
-        text-transform: none !important;
-    }
-    .banner_button_watch{
-        font-size: 20px !important;
-         background-color: #000066 !important ;
-         color: white !important;
-        font-weight: 600 !important;
-        width: 16rem;
-        text-transform: none !important;
-       border: solid !important;
-       border-radius: 10px !important;
-        
-    }
+  }
+  .banner_button_gettouch {
+    font-size: 20px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 16rem;
+    text-transform: none !important;
+  }
+  .banner_button_watch {
+    font-size: 20px !important;
+    background-color: #000066 !important ;
+    color: white !important;
+    font-weight: 600 !important;
+    width: 16rem;
+    text-transform: none !important;
+    border: solid !important;
+    border-radius: 10px !important;
+  }
 }
-@media  screen and (max-width: 900px) {
-    .banner_grid_img{
-        margin-top: 3rem !important;
-    }
-    .banner_button_outer{
-        margin-top: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
+@media screen and (max-width: 900px) {
+  .banner_grid_img {
+    margin-top: 3rem !important;
+  }
+  .banner_button_outer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
-@media  screen and (max-width: 600px) {
-    .Individual_card_grid{
-        margin-top: 3rem;
-        margin-bottom: 0rem;
-        display: flex;
+@media screen and (max-width: 600px) {
+  .Individual_card_grid {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    display: flex;
     justify-content: space-around;
-    }
-    .individual_textbottom_head{
-        text-align: start;
-        font-size: 20px !important;
-        line-height: 26px !important;
-       }
-    .Individuals_logo{
-        width: 15% !important;
-    }
-    .Industries_card_grid{
-        display: flex !important;
-        justify-content: space-around !important;
-    }
-    
-   
-    .solution_paragrph{
-        margin-top: 1rem !important;
-        font-size: 18px !important;
-        text-align: start;
-        line-height: 28px !important;
-    }
-    .solution_heading_dif_head{
-        margin-top: 1rem !important;
-        font-size: 24px !important;
-        text-align: start;
-        color: #000066 !important;
-        font-family: Arial !important;
-        
-    }
-    .solution_grid_head{
-        font-size: 24px !important;
-        font-weight: 600 !important;
-        color: #000066 !important;
-        line-height: 24px !important;
-    }
-    .banner_heading{
-        margin-top: 4rem !important;
-        font-size: 43px !important;
-        text-align: start;
-        color: white;
-        font-weight: 400 !important;
-        font-family: arial, Helvetica, sans-serif !important;
-        line-height: 65px !important;
-    }
-    .banner_text{
-        margin-top: 1.5rem !important;
-        font-size: 16px !important;
-        
-    }
-    .banner_grid_img{
-        margin-top: 3rem !important;
-    }
-    .banner_button_outer{
-        margin-top: 34px;
-        display: flex;
+  }
+  .individual_textbottom_head {
+    text-align: start;
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+  .Individuals_logo {
+    width: 15% !important;
+  }
+  .Industries_card_grid {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+
+  .solution_paragrph {
+    margin-top: 1rem !important;
+    font-size: 20px !important;
+    text-align: start;
+    line-height: 28px !important;
+  }
+  .solution_heading_dif_head {
+    margin-top: 1rem !important;
+    font-size: 40px !important;
+    text-align: start;
+    color: #000066 !important;
+    font-family: Arial !important;
+  }
+  .solution_grid_head {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: #000066 !important;
+    line-height: 24px !important;
+  }
+  .banner_heading {
+    margin-top: 5rem !important;
+    font-size: 43px !important;
+    text-align: start;
+    color: white;
+    font-weight: 400 !important;
+    font-family: arial, Helvetica, sans-serif !important;
+    line-height: 65px !important;
+  }
+  .banner_text {
+    margin-top: 1.5rem !important;
+    font-size: 16px !important;
+  }
+  .banner_grid_img {
+    margin-top: 3rem !important;
+  }
+  .banner_button_outer {
+    margin-top: 34px;
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 20px;
-    }
-    .solution_outer_div{
-        padding: 1rem;
-    }
-    .solution_heading_dif{
-        font-size: 36px !important;
-        text-align: center;
-        font-weight: 600 !important;
-        color: #000066 !important;
-    }
-    .solution_grid_text_outer{
-        text-align: center;
-    }
-    .solution_grid_text{
-        padding-right: 0px !important;
-        font-size: 19px !important;
-        color: #686767 !important;
-    }
-    .Industries_button{
-        font-size: 16px !important;
-         background-color: #7F00FF !important ;
-        font-weight: 600 !important;
-        width: 100%;
-        text-transform: none !important;
-        padding: 2rem !important;
-        border-radius: 18px !important;
-    }
-    .Organizations_button{
-        font-size: 20px !important;
-         background-color: #7F00FF !important ;
-        font-weight: 600 !important;
-        width: 100%;
-        text-transform: none !important;
-        padding: 1rem !important;
-        border-radius: 18px !important;
-    }
-    .individual_heading_dif_head{
-        font-size: 34px !important;
-        text-align: start;
-        color: #000066 !important;
-        display: flex;
-        align-items: center;
-        line-height: 38px !important;
-        
-    }
-    .banner_outer_grid{
-        background-color: #000066;
-        padding: 1rem;
-    }
-    .solution_outer_grid_card{
-        row-gap: 3rem;
-        margin-top: 5rem;
-        margin-bottom: 8rem;
-    }
-    .solution_grid_card{
-        display: ruby;
-    }
+  }
+  .solution_outer_div {
+    padding: 1rem;
+  }
+  .solution_heading_dif {
+    font-size: 36px !important;
+    text-align: center;
+    font-weight: 600 !important;
+    color: #000066 !important;
+  }
+  .solution_grid_text_outer {
+    text-align: center;
+  }
+  .solution_grid_text {
+    padding-right: 0px !important;
+    font-size: 19px !important;
+    color: #686767 !important;
+  }
+  .Industries_button {
+    font-size: 16px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 100%;
+    text-transform: none !important;
+    padding: 2rem !important;
+    border-radius: 18px !important;
+  }
+  .Organizations_button {
+    font-size: 20px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 100%;
+    text-transform: none !important;
+    padding: 1rem !important;
+    border-radius: 18px !important;
+  }
+  .individual_heading_dif_head {
+    font-size: 34px !important;
+    text-align: start;
+    color: #000066 !important;
+    display: flex;
+    align-items: center;
+    line-height: 38px !important;
+  }
+  .banner_outer_grid {
+    background-color: #000066;
+    padding: 1rem;
+  }
+  .solution_outer_grid_card {
+    row-gap: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .solution_grid_card {
+    display: ruby;
+  }
+  .contact_card{
+    max-width: 26rem !important;
+     margin: auto  !important; 
+     padding-left: 2rem;
+     padding-right: 2rem;
+     border-radius: 50px !important;
+     border: solid 3px !important;
+     border-color: #d9d9d9db !important;
 }
-@media  screen and (max-width: 400px) {
-    .individual_heading_dif_head{
-        font-size: 28px !important;
-        text-align: start;
-        color: #000066 !important;
-        display: flex;
-        align-items: center;
-        
-    }
-    .Industries_button{
-        font-size: 12px !important;
-         background-color: #7F00FF !important ;
-        font-weight: 600 !important;
-        width: 100%;
-        text-transform: none !important;
-        padding: 1.5rem !important;
-        border-radius: 18px !important;
-    }
-    .solution_outer_grid_card{
-        row-gap: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 5rem;
-    }
-    .solution_grid_head{
-        font-size: 18px !important;
-        font-weight: 600 !important;
-        color: #000066 !important;
-    }
-    .banner_heading{
-        margin-top: 2rem !important;
-        font-size: 43px !important;
-        text-align: start;
-        color: white;
-        font-weight: 400 !important;
-        font-family: arial, Helvetica, sans-serif !important;
-        line-height: 65px !important;
-    }
-    .banner_grid_text{
-        padding: 0rem;
-    }
-    .banner_text{
-        margin-top: 1.5rem !important;
-        font-size: 13px !important;
-        
-    }
+}
+@media screen and (max-width: 400px) {
+  .solution_heading_dif_head {
+    margin-top: 1rem !important;
+    font-size: 36px !important;
+    text-align: start;
+    color: #000066 !important;
+    font-family: Arial !important;
+  }
+  .Individual_card_grid {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Organizations_button {
+    font-size: 12px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 100%;
+    text-transform: none !important;
+    padding: 1rem !important;
+    border-radius: 18px !important;
+  }
+  .individual_heading_dif_head {
+    font-size: 28px !important;
+    text-align: start;
+    color: #000066 !important;
+    display: flex;
+    align-items: center;
+  }
+  .Industries_button {
+    font-size: 12px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 100%;
+    text-transform: none !important;
+    padding: 1.5rem !important;
+    border-radius: 18px !important;
+  }
+  .solution_outer_grid_card {
+    row-gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .solution_grid_head {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #000066 !important;
+  }
+  .banner_heading {
+    margin-top: 3rem !important;
+    font-size: 38px !important;
+    text-align: start;
+    color: white;
+    font-weight: 600 !important;
+    font-family: arial, Helvetica, sans-serif !important;
+    line-height: 42px !important;
+  }
+  .banner_grid_text {
+    padding: 0rem;
+  }
+  .banner_text {
+    margin-top: 1.5rem !important;
+    font-size: 13px !important;
+  }
+  .About_button {
+    font-size: 12px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 60%;
+    text-transform: none !important;
+    padding: 12px !important;
+    border-radius: 14px !important;
+  }
+  .contact_card{
+    max-width: 18rem !important;
+     margin: auto  !important; 
+     padding-left: 1rem;
+     padding-right: 1rem;
+     border-radius: 50px !important;
+     border: solid 3px !important;
+     border-color: #d9d9d9db !important;
+}
 }

@@ -10,7 +10,7 @@ import sharImg from "../../Images/sharing_economy.png";
 
 export default function Industries() {
   return (
-    <div className={Style.solution_outer_div}>
+    <div className={Style.solution_outer_div} id="industries">
       <Typography className={Style.solution_heading_dif}>Industries</Typography>
       <Typography className={Style.solution_heading_dif_head}>
         Empowering Industries with Trusted Solutions

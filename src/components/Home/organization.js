@@ -12,9 +12,9 @@ import userplusImg from "../../Images/userPlus.png";
 import privacyImg from "../../Images/privay_by_design.png";
 import interImg from "../../Images/interoperability.png";
 
-export default function Individuals() {
+export default function Organization() {
   return (
-    <div className={Style.solution_outer_div}>
+    <div className={Style.solution_outer_div} id="organization">
       <Typography className={Style.solution_heading_dif}>
         Organizations
       </Typography>
@@ -43,7 +43,7 @@ export default function Individuals() {
               Fraud Prevention
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Safeguard your transactions with our robust solutions, preventing
               payment fraud and securing card-not-present (CNP) payments by
@@ -59,7 +59,7 @@ export default function Individuals() {
               Account Protection
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Defend against online threats such as account takeover with our
               advanced identity verification and biometric authentication tools,
@@ -74,7 +74,7 @@ export default function Individuals() {
               Document Verification
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Swiftly verify identity documents from any location, establishing
               a trusted and secure digital identity that replaces cumbersome
@@ -89,7 +89,7 @@ export default function Individuals() {
               Enhanced Onboarding
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Streamline the onboarding process for new users, instilling trust
               with seamless identity verification and reducing operational costs
@@ -104,7 +104,7 @@ export default function Individuals() {
               Regulatory Compliance
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Ensure compliance with stringent KYC and AML regulations
               effortlessly, leveraging our reliable and trusted digital identity
@@ -119,7 +119,7 @@ export default function Individuals() {
               Improved Conversions
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Enhance customer acquisition and conversion rates with a
               streamlined experience, featuring automatic population of customer
@@ -134,7 +134,7 @@ export default function Individuals() {
               Identity Protection
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Mitigate the risks of identity fraud and theft through biometric
               authentication and accurate instant identity verification,
@@ -149,7 +149,7 @@ export default function Individuals() {
               Privacy and Security
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Prioritize privacy by design with our solutions, allowing
               individuals to control the sharing of their identity data and
@@ -164,7 +164,7 @@ export default function Individuals() {
               Global Interoperability
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
             >
               Embrace interoperability across network participants with
               transparent standards, supporting diverse use cases and ensuring

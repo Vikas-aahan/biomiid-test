@@ -3,9 +3,10 @@ import React from "react";
 import Style from "../../Css/home.module.css";
 import rightImg from "../../Images/verify.png";
 
+
 export default function About() {
   return (
-    <div className={Style.solution_outer_div}>
+    <div className={Style.solution_outer_div} id="about">
       <Typography className={Style.solution_heading_dif}>About Us</Typography>
       <br />
       <br />
@@ -41,9 +42,9 @@ export default function About() {
       </Typography>
       <br />
       <br />
-      <Grid container>
+      <Grid container className={Style.Individual_card_grid_outer}>
         <Grid lg={4} md={6} xs={12} className={Style.Individual_card_grid}>
-          <Card variant="outlined" className={Style.Individual_card}>
+          <Card variant="outlined" className={Style.about_card}>
             <img style={{ width: "35%" }} src={rightImg} />
             <Typography className={Style.Industries_card_head}>
               Effortless for you
@@ -56,7 +57,7 @@ export default function About() {
           </Card>
         </Grid>
         <Grid lg={4} md={6} xs={12} className={Style.Individual_card_grid}>
-          <Card variant="outlined" className={Style.Individual_card}>
+          <Card variant="outlined" className={Style.about_card}>
             <img style={{ width: "35%" }} src={rightImg} />
             <Typography className={Style.Industries_card_head}>
               Protection You can trust
@@ -70,7 +71,7 @@ export default function About() {
           </Card>
         </Grid>
         <Grid lg={4} md={6} xs={12} className={Style.Individual_card_grid}>
-          <Card variant="outlined" className={Style.Individual_card}>
+          <Card variant="outlined" className={Style.about_card}>
             <img style={{ width: "35%" }} src={rightImg} />
             <Typography className={Style.Industries_card_head}>
               Empowering Everyone
@@ -84,15 +85,14 @@ export default function About() {
           </Card>
         </Grid>
       </Grid>
-      <br/>
-      <br/>
+     
       
-    <Typography sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"20px" }}>Together, let's build a secure and thriving digital future.</Typography>
-    <Typography sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"20px" }}>Ready to experience secure and seamless digital identity? Contact us today!</Typography><br/><br/>
+    <Typography sx={{ textAlign: "start", marginTop: "", fontSize: "18px" ,lineHeight:"21px" }}>Together, let's build a secure and thriving digital future.</Typography>
+    <Typography sx={{ textAlign: "start", marginTop: "20px", fontSize: "18px" ,lineHeight:"21px" }}>Ready to experience secure and seamless digital identity? Contact us today!</Typography><br/><br/>
     <Typography className={Style.solution_heading_dif_head}>
     Careers  at BIOMIID
       </Typography>
-      <Typography sx={{ textAlign: "start", marginTop: "28px", fontSize: "22px" ,lineHeight:"26px" ,marginBottom:"5rem" }}>If you share BIOMIID's vision and would like to join our team in the fight against cybercrime in the digital world, please apply and share your contact details. Let us know if you are interested in joining us, and we will contact you as soon as possible!</Typography>
+      <Typography sx={{ textAlign: "start", marginTop: "28px", fontSize: "18px" ,lineHeight:"26px" ,marginBottom:"5rem" }}>If you share BIOMIID's vision and would like to join our team in the fight against cybercrime in the digital world, please apply and share your contact details. Let us know if you are interested in joining us, and we will contact you as soon as possible!</Typography>
       <Button
             variant="contained"
             size="large"

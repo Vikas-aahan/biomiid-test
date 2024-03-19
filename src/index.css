@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.react-international-phone-input-container .react-international-phone-input{
+  width: 20rem;
+  height: 2.5rem  !important;
+}
+.react-international-phone-country-selector-button{
+  height: 2.5rem !important;
+}

@@ -80,7 +80,7 @@ export default function OurSolution() {
       </Grid>
       {/* <----------------------  Image/Text-Section -----------------> */}
       <Grid container>
-        <Grid lg={12} md={12} xs={12}>
+        <Grid lg={12} md={12} xs={12} id="eId-verification" >
           <Typography className={Style.solution_heading_dif}>
             eID Verification
           </Typography>
@@ -109,7 +109,7 @@ export default function OurSolution() {
           <img style={{ width: "100%" }} src={idImg} />
         </Grid>
       </Grid>
-      <Grid container>
+      <Grid container id="biometric-authentication">
         <Grid lg={12} md={12} xs={12}>
           <Typography className={Style.solution_heading_dif}>
             Biometric Authentication
@@ -140,7 +140,7 @@ export default function OurSolution() {
           </Button>
         </Grid>
       </Grid>
-      <Grid container>
+      <Grid container id="identity-verification">
         <Grid lg={12} md={12} xs={12}>
           <Typography className={Style.solution_heading_dif}>
             Identity Verification
@@ -172,7 +172,7 @@ export default function OurSolution() {
           <img style={{ width: "85%" }} src={IdenImg} />
         </Grid>
       </Grid>
-      <Grid container>
+      <Grid container id="digital-identity-network">
         <Grid lg={12} md={12} xs={12}>
           <Typography className={Style.solution_heading_dif}>
             Digital identity Network

@@ -25,17 +25,84 @@
     margin-top: 5rem;
 }
 .header_contact_button{
-    margin-top: 14px !important;
-                width: 20% !important;
-                height: 24% !important;
+    margin-top: 18px !important;
+                width: 18% !important;
+                height: 20% !important;
                 color: white !important;
                 display: block !important;
                 text-transform: capitalize !important;
                 font-weight: 600 !important;
                 background: #7F00FF !important;
-                font-size: 20px !important;
-                border-radius: 10px !important;
+                font-size: 16px !important;
+                border-radius: 8px !important;
 }
-@media  screen and (max-width: 1280px) {
-           
+.top_nav{
+    background-color: #7F00FF;
+    padding: 1rem;
+
+}
+.top_nav_inner_text_button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top_nav_inner_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_top_nav{
+    font-size: 16px !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+.text_top_nav_button{
+   
+    width: 16% !important;
+    height: 26% !important;
+    color: #7F00FF !important;
+    display: block !important;
+    text-transform: capitalize !important;
+    font-weight: 600 !important;
+    background: white !important;
+    font-size: 16px !important;
+    border-radius: 9px !important;
+}
+@media  screen and (max-width: 600px) {
+    .text_top_nav_button{
+   
+        width: 50% !important;
+        height: 26% !important;
+        color: #7F00FF !important;
+        display: block !important;
+        text-transform: capitalize !important;
+        font-weight: 600 !important;
+        background: white !important;
+        font-size: 16px !important;
+        border-radius: 9px !important;
+    } 
+    .text_top_nav{
+        font-size: 9px !important;
+        color: white !important;
+        font-weight: 600 !important;
+    }
+}
+@media  screen and (max-width: 415px) {
+    .text_top_nav_button{
+   
+        width: 100% !important;
+        height: 26% !important;
+        color: #7F00FF !important;
+        display: block !important;
+        text-transform: capitalize !important;
+        font-weight: 600 !important;
+        background: white !important;
+        font-size: 16px !important;
+        border-radius: 9px !important;
+    } 
+    .text_top_nav{
+        font-size: 9px !important;
+        color: white !important;
+        font-weight: 600 !important;
+    }
 }

@@ -11,6 +11,7 @@ function App() {
        <BrowserRouter>
        <Routes>
            <Route path='/' element={<Home lan={lan} setLang={setLang}  />}  />
+          
        </Routes>
        </BrowserRouter>
     </div>
