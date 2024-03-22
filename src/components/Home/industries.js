@@ -19,7 +19,7 @@ export default function Industries() {
 
   },[])
   return (
-    <div className={Style.solution_outer_div} id="industries">
+    <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}> {lang === "en"?en.section6_title:rf.section6_title}</Typography>
       <Typography className={Style.solution_heading_dif_head}>
       {lang === "en"?en.section6_subtitle:rf.section6_subtitle}

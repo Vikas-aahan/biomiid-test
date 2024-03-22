@@ -219,6 +219,7 @@ export default function OurSolution() {
           </Button>
         </Grid>
       </Grid>
+      <div id="industries"></div>
     </div>
   );
 }
