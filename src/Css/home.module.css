@@ -6,8 +6,8 @@
   padding: 5rem;
 }
 .banner_heading {
-  margin-top: 5rem !important;
-  font-size: 55px !important;
+  margin-top: 6rem !important;
+  font-size: 50px !important;
   text-align: start;
   color: white;
   font-weight: 600 !important;
@@ -17,7 +17,7 @@
 .banner_text {
   margin-top: 1.5rem !important;
   color: white;
-  font-size: 23px !important;
+  font-size: 20px !important;
   text-align: start;
 
 }
@@ -82,6 +82,7 @@
   text-align: start;
   color: #000066 !important;
   font-family: Arial !important;
+  font-weight: 600 !important;
 }
 .solution_outer_div {
   padding-left: 7rem;
@@ -156,15 +157,17 @@
   display: flex;
   align-items: center;
   line-height: 42px !important;
+  font-weight: 600 !important;
 }
 .individual_textbottom_head {
   text-align: start;
-  font-size: 30px !important;
+  font-size: 20px !important;
   line-height: 34px !important;
 }
 .individual_textbottom_head_benefit {
   font-size: 40px !important;
   text-align: start;
+  color: #000066 !important;
 }
 .Individual_card {
   padding: 1.5rem;
@@ -255,6 +258,18 @@
   text-transform: none !important;
   padding: 12px !important;
   border-radius: 14px !important;
+}
+@media screen and (max-width: 1367px) {
+  .banner_heading {
+    margin-top: 1rem !important;
+    font-size: 55px !important;
+    text-align: start;
+    color: white;
+    font-weight: 600 !important;
+    font-family: "Poppins", sans-serif !important;
+    line-height: 74px !important;
+  }
+
 }
 @media screen and (max-width: 1280px) {
   .banner_outer_grid {

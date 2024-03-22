@@ -15,7 +15,7 @@ export default function Individuals() {
 
   },[])
   return (
-    <div className={Style.solution_outer_div} id="individuals">
+    <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
       {lang === "en"?en.section7_title:rf.section7_title}
        
@@ -123,6 +123,8 @@ export default function Individuals() {
           </Card>
         </Grid>
       </Grid>
-    </div>
+      <div id="organization"></div>
+    </div >
+    
   );
 }

@@ -23,7 +23,7 @@ export default function Organization() {
 
   },[])
   return (
-    <div className={Style.solution_outer_div} id="organization">
+    <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
       {lang === "en"?en.section8_title:rf.section8_title}
        
@@ -217,6 +217,7 @@ export default function Organization() {
             {lang === "en"?en.section8_button_text:rf.section8_button_text}
             
           </Button><br/><br/>
+          <div id="about"></div>
     </div>
   );
 }

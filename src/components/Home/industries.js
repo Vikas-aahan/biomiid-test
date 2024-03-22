@@ -130,6 +130,7 @@ export default function Industries() {
           >{lang === "en"?en.section6_button_text:rf.section6_button_text}
          
           </Button>
+          <div id="individuals"></div>
     </div>
   );
 }

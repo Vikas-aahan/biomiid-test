@@ -41,7 +41,8 @@ export default function OurSolution() {
         
         {lang === "en"?en.section1_content2:rf.section1_content2}
       </Typography>
-      <img className={Style.solution_img} src={solutionImg}/>
+      <img className={Style.solution_img} src={solutionImg} />
+      
       {/* <Grid container  className={Style.solution_outer_grid_card}>
         <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
           <Card variant="outlined" className={Style.solution_card}>
@@ -85,8 +86,11 @@ export default function OurSolution() {
         </Grid>
       </Grid> */}
       {/* <----------------------  Image/Text-Section -----------------> */}
-      <Grid container>
-        <Grid lg={12} md={12} xs={12} id="eId-verification" >
+     
+      <div style={{scrollSnapAlign:"start"}} id="eId-verification" >
+      <Grid container >
+       
+        <Grid lg={12} md={12} xs={12}  sx={{paddingTop:"8rem"}}>
           <Typography className={Style.solution_heading_dif}>
            
             {lang === "en"?en.section2_title:rf.section2_title}
@@ -115,8 +119,9 @@ export default function OurSolution() {
           <img style={{ width: "100%" }} src={idImg} />
         </Grid>
       </Grid>
+      </div>
       <Grid container id="biometric-authentication">
-        <Grid lg={12} md={12} xs={12}>
+        <Grid lg={12} md={12} xs={12} sx={{paddingTop:"8rem"}}>
           <Typography className={Style.solution_heading_dif}>
             
             {lang === "en"?en.section3_title:rf.section3_title}
@@ -147,7 +152,7 @@ export default function OurSolution() {
         </Grid>
       </Grid>
       <Grid container id="identity-verification">
-        <Grid lg={12} md={12} xs={12}>
+        <Grid lg={12} md={12} xs={12} sx={{paddingTop:"8rem"}}>
           <Typography className={Style.solution_heading_dif}>
            
             {lang === "en"?en.section4_title:rf.section4_title}
@@ -179,7 +184,7 @@ export default function OurSolution() {
         </Grid>
       </Grid>
       <Grid container id="digital-identity-network">
-        <Grid lg={12} md={12} xs={12}>
+        <Grid lg={12} md={12} xs={12} sx={{paddingTop:"8rem"}}>
           <Typography className={Style.solution_heading_dif}>
           {lang === "en"?en.section5_title:rf.section5_title}
            

@@ -21,6 +21,7 @@ import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
 import en from "../lang/en";
 import rf from "../lang/rf";
+import { Link } from "react-router-dom";
 
 
 function ResponsiveAppBar() {
@@ -74,7 +75,10 @@ function ResponsiveAppBar() {
                 width: "25%",
               }}
             >
-              <img style={{ width: "57%" }} src={logo} />
+              <HashLink
+                    to="/#banner"
+                  
+                  ><img style={{ width: "57%" }} src={logo} /></HashLink>
             </Box>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -502,8 +506,12 @@ function ResponsiveAppBar() {
             </Menu> */}
             </Box>
           </Toolbar>
+        
         </Container>
+       
       </AppBar>
+     
+      
     </>
   );
 }

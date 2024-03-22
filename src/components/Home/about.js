@@ -14,7 +14,7 @@ export default function About() {
 
   },[])
   return (
-    <div className={Style.solution_outer_div} id="about">
+    <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
       {lang === "en"?en.section9_title:rf.section9_title}</Typography>
       <br />
@@ -158,6 +158,7 @@ export default function About() {
       </Button>
       <br />
       <br />
+      <div id="contact"></div>
     </div>
   );
 }

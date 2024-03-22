@@ -10,8 +10,11 @@ import ContactUs from "../components/Home/contact-us";
 
 export default function Home({lan,setLang}) {
   return (
+    <>
+   
+   <div id="banner" >
     <UserLayout>
-        <Banner/>
+        <Banner />
         <OurSolution />
         <Industries/>
         <Individuals/>
@@ -19,5 +22,7 @@ export default function Home({lan,setLang}) {
         <About/><br/>
         <ContactUs/>
     </UserLayout>
+    </div>
+    </>
   );
 }

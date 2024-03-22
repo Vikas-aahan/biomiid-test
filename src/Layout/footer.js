@@ -47,6 +47,10 @@ export default function Footer() {
             {lang === "en"?en.footer_terms:rf.footer_terms}
              
             </Typography>
+            <Typography sx={{ color: "white" }}>
+            {lang === "en"?en.footer_privacy:rf.footer_privacy}
+             
+            </Typography>
           </Grid>
         </Grid>
       </Box>

@@ -1315,7 +1315,7 @@ export default function ContactUs() {
     }
   };
   return (
-    <div className={Style.outer_div_contact} id="contact">
+    <div className={Style.outer_div_contact} >
       <br />
       <br />
     
