@@ -7,18 +7,29 @@ import healthImg from "../../Images/healthCare.png";
 import retailImg from "../../Images/retail_ecom.png";
 import travelImg from "../../Images/travel.png";
 import sharImg from "../../Images/sharing_economy.png";
+import en from "../../lang/en";
+import rf from "../../lang/rf";
 
 export default function Industries() {
+  const [lang, setLang] = React.useState("");
+  
+  React.useEffect(()=>{
+   const lan = localStorage.getItem("language");
+   setLang(lan);
+
+  },[])
   return (
     <div className={Style.solution_outer_div} id="industries">
-      <Typography className={Style.solution_heading_dif}>Industries</Typography>
+      <Typography className={Style.solution_heading_dif}> {lang === "en"?en.section6_title:rf.section6_title}</Typography>
       <Typography className={Style.solution_heading_dif_head}>
-        Empowering Industries with Trusted Solutions
+      {lang === "en"?en.section6_subtitle:rf.section6_subtitle}
+        
       </Typography>
       <Typography
         sx={{ textAlign: "start", fontWeight: "600", fontSize: "28px" }}
       >
-        Industries We Serve :
+       {lang === "en"?en.section6_content:rf.section6_content}
+      
       </Typography>
 
       <Grid container>
@@ -26,14 +37,13 @@ export default function Industries() {
           <Card variant="outlined" className={Style.Industries_card}>
             <img style={{ width: "35%" }} src={goveImg} />
             <Typography className={Style.Industries_card_head}>
-              Government
+            {lang === "en"?en.section6_government_label:rf.section6_government_label}
+             
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "24" }}
-            >
-              Forge ahead with groundbreaking online services that harness the
-              power of secure digital identities, enhancing both security and
-              convenience for citizens.
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+            > {lang === "en"?en.section6_government_content:rf.section6_government_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -41,14 +51,13 @@ export default function Industries() {
           <Card variant="outlined" className={Style.Industries_card}>
             <img style={{ width: "35%" }} src={finacImg} />
             <Typography className={Style.Industries_card_head}>
-              Financial Services
+            {lang === "en"?en.section6_financial_label:rf.section6_financial_label}
+              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "24" }}
-            >
-              Revolutionize online banking with trusted and secure identity
-              solutions. Say goodbye to manual processes and errors as you boost
-              account openings, save time, and cut costs.
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+            > {lang === "en"?en.section6_financial_content:rf.section6_financial_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -56,14 +65,14 @@ export default function Industries() {
           <Card variant="outlined" className={Style.Industries_card}>
             <img style={{ width: "35%" }} src={healthImg} />
             <Typography className={Style.Industries_card_head}>
-              Health Care
+            {lang === "en"?en.section6_health_label:rf.section6_health_label}
+              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "24" }}
-            >
-              Transform patient experiences with innovative online health
-              services. From seamless check-ins to safeguarding sensitive data,
-              prioritize privacy without compromising efficiency.
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+            >        
+          {lang === "en"?en.section6_health_content:rf.section6_health_content}
+              
             </Typography>
           </Card>
         </Grid>
@@ -71,15 +80,13 @@ export default function Industries() {
           <Card variant="outlined" className={Style.Industries_card}>
             <img style={{ width: "35%" }} src={retailImg} />
             <Typography className={Style.Industries_card_head}>
-              Retail and e-commerce
+            {lang === "en"?en.section6_retail_label:rf.section6_retail_label}
+              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "24" }}
-            >
-              Drive conversions and reduce cart abandonment rates with
-              lightning-fast remote identity verification. Seamlessly onboard
-              customers and streamline checkout processes for unparalleled
-              convenience.
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+            >  {lang === "en"?en.section6_retail_content:rf.section6_retail_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -87,14 +94,14 @@ export default function Industries() {
           <Card variant="outlined" className={Style.Industries_card}>
             <img style={{ width: "35%" }} src={travelImg} />
             <Typography className={Style.Industries_card_head}>
-              Travel & Transportation
+            {lang === "en"?en.section6_travel_label:rf.section6_travel_label}
+              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "24" }}
-            >
-              Elevate customer experiences with hassle-free online registrations
-              and check-ins. Ensure compliance with industry standards while
-              verifying identity and travel documents remotely.
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+            >  
+            {lang === "en"?en.section6_travel_content:rf.section6_travel_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -102,14 +109,13 @@ export default function Industries() {
           <Card variant="outlined" className={Style.Industries_card}>
             <img style={{ width: "35%" }} src={sharImg} />
             <Typography className={Style.Industries_card_head}>
-              Sharing Economy
+            {lang === "en"?en.section6_sharing_label:rf.section6_sharing_label}
+              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "24" }}
-            >
-              ity within your community. Enhance registration experiences for
-              users and employees alike, laying the foundation for stronger,
-              more connected communities.
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+            >{lang === "en"?en.section6_sharing_content:rf.section6_sharing_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -121,8 +127,8 @@ export default function Industries() {
             variant="contained"
             size="large"
             className={Style.Industries_button}
-          >
-            Your Industry don't listed? Please  contact Us
+          >{lang === "en"?en.section6_button_text:rf.section6_button_text}
+         
           </Button>
     </div>
   );

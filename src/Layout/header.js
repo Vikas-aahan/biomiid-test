@@ -16,10 +16,24 @@ import Fade from "@mui/material/Fade";
 import Paper from "@mui/material/Paper";
 import Popper from "@mui/material/Popper";
 import { HashLink } from "react-router-hash-link";
+import TopNav from "./top-nav";
+import FormControl from "@mui/material/FormControl";
+import NativeSelect from "@mui/material/NativeSelect";
+import en from "../lang/en";
+import rf from "../lang/rf";
+
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [lang, setLang] = React.useState("");
+  
+     React.useEffect(()=>{
+      const lan = localStorage.getItem("language");
+      setLang(lan);
+
+     },[])
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -38,9 +52,18 @@ function ResponsiveAppBar() {
   React.useEffect(() => {
     handleCloseNavMenu();
   }, []);
+
+  
+  const handleLanguageChange = (e) => {
+  
+    localStorage.setItem("language", e.target.value);
+    window.location.reload();
+    
+};
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: "#000066" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "#000066" }}>
+        <TopNav />
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box
@@ -207,24 +230,26 @@ function ResponsiveAppBar() {
                 <MenuItem onClick={handleCloseNavMenu}>
                   <HashLink
                     to="/#organization"
-                    style={{ textDecoration: "none",color:"black" }}
+                    style={{ textDecoration: "none", color: "black" }}
                   >
-                    <Typography textAlign="center">Organizations</Typography>
+                    <Typography textAlign="center">{lang === "en"?en.header_menu_organizations:rf.header_menu_organizations}</Typography>
                   </HashLink>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                <HashLink
+                  <HashLink
                     to="/#individuals"
-                    style={{ textDecoration: "none",color:"black" }}
-                  ><Typography textAlign="center">Individuals</Typography>
-                    </HashLink>
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                     {lang === "en"?en.header_menu_individuals:rf.header_menu_individuals}
+                  </HashLink>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                <HashLink
+                  <HashLink
                     to="/#about"
-                    style={{ textDecoration: "none",color:"black" }}
-                  ><Typography textAlign="center">About</Typography>
-                   </HashLink>
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                     {lang === "en"?en.header_menu_about:rf.header_menu_about}
+                  </HashLink>
                 </MenuItem>
               </Menu>
             </Box>
@@ -254,9 +279,13 @@ function ResponsiveAppBar() {
                         fontSize: "18px",
                       }}
                     >
-                      Solutions
+                     {lang === "en"?en.section1_title10:rf.section1_title10}
                     </Button>
-                    <Popper {...bindPopper(popupState)} transition>
+                    <Popper
+                      {...bindPopper(popupState)}
+                      transition
+                      sx={{ zIndex: 9999 }}
+                    >
                       {({ TransitionProps }) => (
                         <Fade {...TransitionProps} timeout={350}>
                           <Paper
@@ -363,78 +392,89 @@ function ResponsiveAppBar() {
                 )}
               </PopupState>
               <HashLink
-                    to="/#organization"
-                    style={{ textDecoration: "none",color:"black" }}
-                  ><Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  textTransform: "capitalize",
-                  fontWeight: "600",
-                  fontSize: "16px",
-                }}
+                to="/#organization"
+                style={{ textDecoration: "none", color: "black" }}
               >
-                Organizations
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                    display: "block",
+                    textTransform: "capitalize",
+                    fontWeight: "600",
+                    fontSize: "16px",
+                  }}
+                >
+                  {lang === "en"?en.header_menu_organizations:rf.header_menu_organizations}
+                </Button>
               </HashLink>
               <HashLink
-                    to="/#individuals"
-                    style={{ textDecoration: "none",color:"black" }}
-                  ><Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  textTransform: "capitalize",
-                  fontWeight: "600",
-                  fontSize: "16px",
-                }}
+                to="/#individuals"
+                style={{ textDecoration: "none", color: "black" }}
               >
-                Individuals
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                    display: "block",
+                    textTransform: "capitalize",
+                    fontWeight: "600",
+                    fontSize: "16px",
+                  }}
+                >
+                   {lang === "en"?en.header_menu_individuals:rf.header_menu_individuals}
+                </Button>
               </HashLink>
               <HashLink
-                    to="/#about"
-                    style={{ textDecoration: "none",color:"black" }}
-                  >
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  textTransform: "capitalize",
-                  fontWeight: "600",
-                  fontSize: "16px",
-                }}
+                to="/#about"
+                style={{ textDecoration: "none", color: "black" }}
               >
-                About
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                    display: "block",
+                    textTransform: "capitalize",
+                    fontWeight: "600",
+                    fontSize: "16px",
+                  }}
+                >
+                   {lang === "en"?en.header_menu_about:rf.header_menu_about}
+                </Button>
               </HashLink>
-            
+
               <Button className={Style.header_contact_button}>
-              <HashLink
-                    to="/#contact"
-                    style={{ textDecoration: "none",color:"white" }}
-                  >Contact Us </HashLink>
+                <HashLink
+                  to="/#contact"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                   {lang === "en"?en.header_menu_contactus:rf.header_menu_contactus}
+                </HashLink>
               </Button>
-             
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  textTransform: "capitalize",
-                  fontWeight: "600",
-                  fontSize: "16px",
-                }}
-              >
-                EN
-              </Button>
+
+              <FormControl sx={{ marginTop: "1rem" }}>
+                <NativeSelect
+                  sx={{ padding: "5px", color: "white", fontWeight: "600" }}
+                  onChange={handleLanguageChange}
+                 value={localStorage.getItem("language")}
+                >
+                  <option
+                    style={{ fontSize: "20px", color: "black" }}
+                    value={"en"}
+                  >
+                    EN
+                  </option>
+                  <option
+                    style={{ fontSize: "20px", color: "black" }}
+                    value={"fr"}
+                  >
+                    FR
+                  </option>
+                </NativeSelect>
+              </FormControl>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>

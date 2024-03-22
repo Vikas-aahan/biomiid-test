@@ -1,19 +1,26 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
-import bannerImg from "../../Images/homePicture.png";
+import bannerImg from "../../Images/home_picture_biomiid.png";
 import Style from "../../Css/home.module.css";
 import buttonImg from "../../Images/watch_video_white_1.png";
+import en from "../../lang/en";
+import rf from "../../lang/rf";
 export default function Banner() {
+  const [lang, setLang] = React.useState("");
+  
+     React.useEffect(()=>{
+      const lan = localStorage.getItem("language");
+      setLang(lan);
+
+     },[])
   return (
-    <Grid container className={Style.banner_outer_grid}>
+    <Grid container className={Style.banner_outer_grid} >
       <Grid lg={6} md={12} xs={12} className={Style.banner_grid_text}>
         <Typography className={Style.banner_heading}>
-          Revolutionizing Identity for a Trusted & Secure Digital World.
+        {lang === "en"?en.header_title:rf.header_title}
         </Typography>
         <Typography className={Style.banner_text}>
-          Welcome to BIOMIID, where we are revolutionizing digital identity
-          verification and fraud prevention to ensure identity certainty for
-          citizens, users, employees and customers around the world.
+        {lang === "en"?en.header_messages:rf.header_messages}
         </Typography>
         <div className={Style.banner_button_outer}>
           <Button
@@ -21,20 +28,20 @@ export default function Banner() {
             size="large"
             className={Style.banner_button_gettouch}
           >
-            Get In touch
+           {lang === "en"?en.header_left_button_text:rf.header_left_button_text}
           </Button>
           <Button
-            variant="contained"
+            variant="outlined"
             size="large"
             className={Style.banner_button_watch}
           >
-            <img style={{ width: "12%" }} src={buttonImg} /> &nbsp;&nbsp;Watch
-            the video
+            <img style={{ width: "12%" }} src={buttonImg} /> &nbsp;&nbsp;
+            {lang === "en"?en.header_right_button_text:rf.header_right_button_text}
           </Button>
         </div>
       </Grid>
       <Grid lg={6} md={12} xs={12} className={Style.banner_grid_img}>
-        <img className={Style.banner_img}   src={bannerImg} />
+        {/* <img className={Style.banner_img}   src={bannerImg} /> */}
       </Grid>
     </Grid>
   );

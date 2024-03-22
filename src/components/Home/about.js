@@ -2,43 +2,65 @@ import { Button, Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import Style from "../../Css/home.module.css";
 import rightImg from "../../Images/verify.png";
-
+import en from "../../lang/en";
+import rf from "../../lang/rf";
 
 export default function About() {
+  const [lang, setLang] = React.useState("");
+  
+  React.useEffect(()=>{
+   const lan = localStorage.getItem("language");
+   setLang(lan);
+
+  },[])
   return (
     <div className={Style.solution_outer_div} id="about">
-      <Typography className={Style.solution_heading_dif}>About Us</Typography>
+      <Typography className={Style.solution_heading_dif}>
+      {lang === "en"?en.section9_title:rf.section9_title}</Typography>
       <br />
       <br />
       <br />
+
+      <Typography
+        sx={{
+          textAlign: "start",
+          marginTop: "12px",
+          fontSize: "20px",
+          lineHeight: "24px",
+        }}
+      >
+         {lang === "en"?en.section9_content1:rf.section9_content1}
       
-      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "22px" ,lineHeight:"24px"}}>
-        We're a passionate group driven by two things: Security and Innovation!
       </Typography>
       <Typography
-        sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"24px"}}
+        sx={{
+          textAlign: "start",
+          marginTop: "20px",
+          fontSize: "20px",
+          lineHeight: "24px",
+        }}
       >
-        We believe that a strong digital identity is the cornerstone of a safe
-        and trusted online world.
+         {lang === "en"?en.section9_content2:rf.section9_content2}
+      
       </Typography>
       <Typography
-        sx={{ textAlign: "start", marginTop: "20px", fontSize: "22px" ,lineHeight:"24px" }}
+        sx={{
+          textAlign: "start",
+          marginTop: "20px",
+          fontSize: "20px",
+          lineHeight: "24px",
+        }}
       >
-        The{" "}
-        problem ?
-        Existing verification systems are clunky, expensive, and leave everyone
-        vulnerable – individuals, businesses, and organizations alike.
+         {lang === "en"?en.section9_content23:rf.section9_content23}
         
-        That's why we built BIOMID. Here our mission is to create the most
-        user-friendly, reliable, and privacy-conscious digital identity
-        ecosystem in the world.
       </Typography>
       <br />
       <br />
       <br />
       <br />
       <Typography className={Style.solution_heading_dif_head}>
-        Here's what makes us different :
+      {lang === "en"?en.section9_subtitle1:rf.section9_subtitle1}
+       
       </Typography>
       <br />
       <br />
@@ -47,12 +69,14 @@ export default function About() {
           <Card variant="outlined" className={Style.about_card}>
             <img style={{ width: "35%" }} src={rightImg} />
             <Typography className={Style.Industries_card_head}>
-              Effortless for you
+            {lang === "en"?en.section9_effortless_label:rf.section9_effortless_label}
+             
             </Typography>
             <Typography
               sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
             >
-              We take the complexity out of identity verification.
+              {lang === "en"?en.section9_seffortless_content:rf.section9_seffortless_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -60,13 +84,14 @@ export default function About() {
           <Card variant="outlined" className={Style.about_card}>
             <img style={{ width: "35%" }} src={rightImg} />
             <Typography className={Style.Industries_card_head}>
-              Protection You can trust
+            {lang === "en"?en.section9_protection_label:rf.section9_protection_label}
+              
             </Typography>
             <Typography
               sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
             >
-              Our cutting-edge technology safeguards against cyber threats,
-              fraud, and data breaches.
+              {lang === "en"?en.section9_protection_content:rf.section9_protection_content}
+             
             </Typography>
           </Card>
         </Grid>
@@ -74,32 +99,65 @@ export default function About() {
           <Card variant="outlined" className={Style.about_card}>
             <img style={{ width: "35%" }} src={rightImg} />
             <Typography className={Style.Industries_card_head}>
-              Empowering Everyone
+            {lang === "en"?en.section9_everyone_label:rf.section9_everyone_label}
+             
             </Typography>
             <Typography
               sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
             >
-              Our solutions are accessible and affordable for individuals,
-              businesses, and governments.
+               {lang === "en"?en.section9_everyone_content:rf.section9_everyone_content}
+            
             </Typography>
           </Card>
         </Grid>
       </Grid>
-     
-      
-    <Typography sx={{ textAlign: "start", marginTop: "", fontSize: "18px" ,lineHeight:"21px" }}>Together, let's build a secure and thriving digital future.</Typography>
-    <Typography sx={{ textAlign: "start", marginTop: "20px", fontSize: "18px" ,lineHeight:"21px" }}>Ready to experience secure and seamless digital identity? Contact us today!</Typography><br/><br/>
-    <Typography className={Style.solution_heading_dif_head}>
-    Careers  at BIOMIID
+
+      <Typography
+        sx={{
+          textAlign: "start",
+          marginTop: "",
+          fontSize: "20px",
+          lineHeight: "21px",
+        }}
+      >
+         {lang === "en"?en.section9_content24:rf.section9_content24}
+       
       </Typography>
-      <Typography sx={{ textAlign: "start", marginTop: "28px", fontSize: "18px" ,lineHeight:"26px" ,marginBottom:"5rem" }}>If you share BIOMIID's vision and would like to join our team in the fight against cybercrime in the digital world, please apply and share your contact details. Let us know if you are interested in joining us, and we will contact you as soon as possible!</Typography>
-      <Button
-            variant="contained"
-            size="large"
-            className={Style.About_button}
-          >
-            Get in Touch
-          </Button><br/><br/>
+      <Typography
+        sx={{
+          textAlign: "start",
+          marginTop: "20px",
+          fontSize: "18px",
+          lineHeight: "21px",
+        }}
+      >
+          {lang === "en"?en.section9_content3:rf.section9_content3}
+       
+      </Typography>
+      <br />
+      <br />
+      <Typography className={Style.solution_heading_dif_head}>
+      {lang === "en"?en.section9_subtitle2:rf.section9_subtitle2}
+      
+      </Typography>
+      <Typography
+        sx={{
+          textAlign: "start",
+          marginTop: "28px",
+          fontSize: "20px",
+          lineHeight: "26px",
+          marginBottom: "5rem",
+        }}
+      >
+         {lang === "en"?en.section9_content4:rf.section9_content4}
+       
+      </Typography>
+      <Button variant="contained" size="large" className={Style.About_button}>
+      {lang === "en"?en.section9_careers_button_text:rf.section9_careers_button_text}
+       
+      </Button>
+      <br />
+      <br />
     </div>
   );
 }

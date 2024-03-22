@@ -9,34 +9,40 @@ import idLogo from "../../Images/eid.png";
 import bioLogo from "../../Images/biometric_auth.png";
 import IdenLogo from "../../Images/idv.png";
 import didnLogo from "../../Images/digital_id.png";
+import solutionImg from "../../Images/homePicture.png"
+import en from "../../lang/en";
+import rf from "../../lang/rf";
 
 export default function OurSolution() {
+  const [lang, setLang] = React.useState("");
+  
+     React.useEffect(()=>{
+      const lan = localStorage.getItem("language");
+      setLang(lan);
+
+     },[])
   return (
     <div className={Style.solution_outer_div}>
       <Typography className={Style.solution_heading_dif}>
-        Our Solutions
+      {lang === "en"?en.section1_title:rf.section1_title}
       </Typography>
       <Typography className={Style.solution_heading_dif_head}>
-        Ensuring Certainty in Digital Identity
+      {lang === "en"?en.section1_subtitle1:rf.section1_subtitle1}
       </Typography>
       <Typography className={Style.solution_paragrph}>
-        In the current digital era, verifying identities with confidence is
-        paramount. BIOMIID's suite of digital identity and fraud prevention
-        solutions leverages proprietary technologies to establish trust and
-        security with unmatched simplicity, accuracy, and speed. From eID
-        verification to facial biometric authentication, we offer future-proof
-        solutions tailored to meet the KYC and IAM needs of diverse industries.
+      {lang === "en"?en.section1_content1:rf.section1_content1}
       </Typography>
 
       <Typography className={Style.solution_heading_dif_head}>
-        Empowering Trust & Security
+       
+        {lang === "en"?en.section1_subtitle2:rf.section1_subtitle2}
       </Typography>
       <Typography className={Style.solution_paragrph}>
-        We are committed to crafting Identity solutions that redefine the
-        digital landscape, ensuring unprecedented convenience, trust and
-        security while safeguarding individuals privacy across the globe.
+        
+        {lang === "en"?en.section1_content2:rf.section1_content2}
       </Typography>
-      <Grid container  className={Style.solution_outer_grid_card}>
+      <img className={Style.solution_img} src={solutionImg}/>
+      {/* <Grid container  className={Style.solution_outer_grid_card}>
         <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
           <Card variant="outlined" className={Style.solution_card}>
             <div style={{display:"flex",alignItems:"center"}}>
@@ -77,24 +83,23 @@ export default function OurSolution() {
             </div>
           </Card>
         </Grid>
-      </Grid>
+      </Grid> */}
       {/* <----------------------  Image/Text-Section -----------------> */}
       <Grid container>
         <Grid lg={12} md={12} xs={12} id="eId-verification" >
           <Typography className={Style.solution_heading_dif}>
-            eID Verification
+           
+            {lang === "en"?en.section2_title:rf.section2_title}
           </Typography>
         </Grid>
         <Grid lg={7} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "18%" }} src={idLogo} />
           <Typography className={Style.solution_grid_head}>
-            NFC-Based eID Document Authentication
+          
+            {lang === "en"?en.section2_subtitle:rf.section2_subtitle}
           </Typography>
           <Typography className={Style.solution_grid_text}>
-            Seamlessly authenticate your identity with our cutting-edge eID
-            verification solutions. Utilizing NFC technology, we swiftly
-            validate government-issued electronic identity documents,
-            guaranteeing 100% accuracy in seconds.
+            {lang === "en"?en.section2_content:rf.section2_content}
           </Typography>
           <br />
           <Button
@@ -102,7 +107,8 @@ export default function OurSolution() {
             size="large"
             className={Style.banner_button_gettouch}
           >
-            Get In touch
+           
+            {lang === "en"?en.section10_subtitle:rf.section10_subtitle}
           </Button>
         </Grid>
         <Grid lg={5} md={12} xs={12}>
@@ -112,7 +118,8 @@ export default function OurSolution() {
       <Grid container id="biometric-authentication">
         <Grid lg={12} md={12} xs={12}>
           <Typography className={Style.solution_heading_dif}>
-            Biometric Authentication
+            
+            {lang === "en"?en.section3_title:rf.section3_title}
           </Typography>
         </Grid>
         <Grid lg={6} md={12} xs={12}>
@@ -121,14 +128,12 @@ export default function OurSolution() {
         <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={bioLogo} />
           <Typography className={Style.solution_grid_head}>
-            Advanced Biometric Authentication Solution
+          
+            {lang === "en"?en.section3_subtitle:rf.section3_subtitle}
           </Typography>
           <Typography className={Style.solution_grid_text}>
-            Experience security like never before with our biometric
-            authentication solutions. Our advanced technology combines face
-            matching and passive liveness verification, thwarting any attempts
-            at identity fraud with precision. From 2D/3D face masks to deepfake
-            videos, we've got you covered.
+          {lang === "en"?en.section3_content:rf.section3_content}
+           
           </Typography>
           <br />
           <Button
@@ -136,28 +141,28 @@ export default function OurSolution() {
             size="large"
             className={Style.banner_button_gettouch}
           >
-            Contact Sales
+           
+            {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
         </Grid>
       </Grid>
       <Grid container id="identity-verification">
         <Grid lg={12} md={12} xs={12}>
           <Typography className={Style.solution_heading_dif}>
-            Identity Verification
+           
+            {lang === "en"?en.section4_title:rf.section4_title}
           </Typography>
         </Grid>
 
         <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={IdenLogo} />
           <Typography className={Style.solution_grid_head}>
-            Instant Identity Verification Solution
+           
+            {lang === "en"?en.section4_subtitle:rf.section4_subtitle}
           </Typography>
           <Typography className={Style.solution_grid_text}>
-            Say goodbye to uncertainties with our instant identity verification
-            solution. Simply match a selfie with a genuine government-issued ID,
-            and rest assured of 100% accuracy. With unrivaled liveness detection
-            and face matching, we ensure the authenticity of every interaction,
-            shielding you from deep fakes and spoofing.
+          {lang === "en"?en.section4_content:rf.section4_content}
+            
           </Typography>
           <br />
           <Button
@@ -165,7 +170,8 @@ export default function OurSolution() {
             size="large"
             className={Style.banner_button_gettouch}
           >
-            Contact Sales
+           
+            {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
         </Grid>
         <Grid lg={6} md={12} xs={12}>
@@ -175,7 +181,8 @@ export default function OurSolution() {
       <Grid container id="digital-identity-network">
         <Grid lg={12} md={12} xs={12}>
           <Typography className={Style.solution_heading_dif}>
-            Digital identity Network
+          {lang === "en"?en.section5_title:rf.section5_title}
+           
           </Typography>
         </Grid>
 
@@ -185,21 +192,16 @@ export default function OurSolution() {
         <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={didnLogo} />
           <Typography className={Style.solution_grid_head}>
-            Strengthen Connections: Elevating Trust and Security Across Digital
-            and Physical Domains
+          {lang === "en"?en.section5_subtitle:rf.section5_subtitle}
+          
           </Typography>
           <Typography className={Style.solution_grid_text}>
-            Step into a world of enhanced trust and security with our Digital
-            Identity Network. Seamlessly bridging the digital and physical
-            realms, our network protects users, employees, and customers from
-            data breaches, identity theft, fraud, and synthetic identity
-            threats. With unmatched convenience, accuracy, and adaptability,
-            trust BIOMIID to safeguard your digital journey.
+          {lang === "en"?en.section5_content1:rf.section5_content1}
+            
           </Typography><br/>
           <Typography className={Style.solution_grid_text}>
-            Join us in shaping a secure future where digital interactions are
-            not only effortless but also fortified with unparalleled trust and
-            security. At BIOMIID, we're not just innovators.
+          {lang === "en"?en.section5_content2:rf.section5_content2}
+            
           </Typography>
           <br />
           <Button
@@ -207,7 +209,8 @@ export default function OurSolution() {
             size="large"
             className={Style.banner_button_gettouch}
           >
-            Contact Sales
+           
+            {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
         </Grid>
       </Grid>

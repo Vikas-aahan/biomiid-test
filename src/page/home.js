@@ -12,7 +12,7 @@ export default function Home({lan,setLang}) {
   return (
     <UserLayout>
         <Banner/>
-        <OurSolution/>
+        <OurSolution />
         <Industries/>
         <Individuals/>
         <Organization/>

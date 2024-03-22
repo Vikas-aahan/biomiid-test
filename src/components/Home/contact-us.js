@@ -12,6 +12,8 @@ import { ClientJS } from "clientjs";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import Swal from "sweetalert2";
+import en from "../../lang/en";
+import rf from "../../lang/rf";
 
 const countryCodeList = [
   {
@@ -1232,6 +1234,13 @@ export default function ContactUs() {
   const [value1, setValue] = React.useState("");
   const { register, handleSubmit, reset } = useForm();
   const [phone, setPhone] = React.useState("");
+  const [lang, setLang] = React.useState("");
+  
+  React.useEffect(()=>{
+   const lan = localStorage.getItem("language");
+   setLang(lan);
+
+  },[])
   const handleChange = (event) => {
     setValue(event.target.value);
   };
@@ -1309,7 +1318,8 @@ export default function ContactUs() {
     <div className={Style.outer_div_contact} id="contact">
       <br />
       <br />
-      <Typography className={Style.solution_heading_dif}>Contact Us</Typography>
+    
+      <Typography className={Style.solution_heading_dif}>  {lang === "en"?en.section10_title:rf.section10_title}</Typography>
       <br />
       <br />
       <br />
@@ -1317,10 +1327,12 @@ export default function ContactUs() {
       <div sx={{ textAlign: "-webkit-center" }}>
         <Card variant="outlined" className={Style.contact_card}>
           <Typography className={Style.contact_heading}>
-            Get in touch
+          {lang === "en"?en.section10_subtitle:rf.section10_subtitle}
+           
           </Typography>
           <Typography className={Style.contact_text}>
-            Simply fill out this form and we will respond to you shortly.
+          {lang === "en"?en.section10_content:rf.section10_content}
+           
           </Typography>
           <Box component="form" onSubmit={handleSubmit(onSubmit)}>
             <Grid container className={Style.contact_form_outer_grid}>
@@ -1344,7 +1356,7 @@ export default function ContactUs() {
                           }}
                         />
                       }
-                      label="Sales"
+                      label={lang === "en"?en.section10_sales:rf.section10_sales}
                     />
                     <FormControlLabel
                       value="SUPPORT"
@@ -1358,7 +1370,7 @@ export default function ContactUs() {
                           }}
                         />
                       }
-                      label="Support"
+                      label={lang === "en"?en.section10_support:rf.section10_support}
                     />
                     <FormControlLabel
                       value="RELYING PARTY PARTNER"
@@ -1372,7 +1384,7 @@ export default function ContactUs() {
                           }}
                         />
                       }
-                      label="Relying Party Partner"
+                      label={lang === "en"?en.section10_relying_party:rf.section10_relying_party}
                     />
                     <FormControlLabel
                       value="CAREERS"
@@ -1386,7 +1398,7 @@ export default function ContactUs() {
                           }}
                         />
                       }
-                      label="Careers"
+                      label={lang === "en"?en.section10_careers:rf.section10_careers}
                     />
                   </RadioGroup>
                 </FormControl>
@@ -1396,10 +1408,12 @@ export default function ContactUs() {
               ) : (
                 <Grid lg={12} md={12} xs={12}>
                   <Typography sx={{ textAlign: "start" }}>
-                    Company name*
+                  {lang === "en"?en.section10_companyname:rf.section10_companyname}
+                   
                   </Typography>
                   <TextField
                     fullWidth
+                    required
                     id="outlined-basic"
                     variant="outlined"
                     size="small"
@@ -1411,8 +1425,9 @@ export default function ContactUs() {
 
               <Grid lg={5.5} md={5.5} xs={12}>
                 {" "}
-                <Typography sx={{ textAlign: "start" }}>First name*</Typography>
+                <Typography sx={{ textAlign: "start" }}>{lang === "en"?en.section10_firstname:rf.section10_firstname}</Typography>
                 <TextField
+                required
                   fullWidth
                   type="text"
                   id="outlined-basic"
@@ -1424,8 +1439,9 @@ export default function ContactUs() {
               </Grid>
               <Grid lg={5.5} md={5.5} xs={12}>
                 {" "}
-                <Typography sx={{ textAlign: "start" }}>Last name*</Typography>
+                <Typography sx={{ textAlign: "start" }}>{lang === "en"?en.section10_lastname:rf.section10_lastname}</Typography>
                 <TextField
+                required
                   fullWidth
                   type="text"
                   id="outlined-basic"
@@ -1436,8 +1452,9 @@ export default function ContactUs() {
                 />
               </Grid>
               <Grid lg={12} md={12} xs={12}>
-                <Typography sx={{ textAlign: "start" }}>E-mail*</Typography>
+                <Typography sx={{ textAlign: "start" }}>{lang === "en"?en.section10_email:rf.section10_email}</Typography>
                 <TextField
+                required
                   fullWidth
                   type="email"
                   id="outlined-basic"
@@ -1449,9 +1466,10 @@ export default function ContactUs() {
               </Grid>
               <Grid lg={5.5} md={5.5} xs={12}>
                 {" "}
-                <Typography sx={{ textAlign: "start" }}>Phone*</Typography>
+                <Typography sx={{ textAlign: "start" }}>{lang === "en"?en.section10_phone:rf.section10_phone}</Typography>
                 <div style={{ display: "flex", alignItems: "flex-end" }}>
                   <PhoneInput
+                  required
                     defaultCountry="ua"
                     value={phone}
                     onChange={(phone) => setPhone(phone)}
@@ -1461,8 +1479,9 @@ export default function ContactUs() {
               </Grid>
               <Grid lg={5.5} md={5.5} xs={12}>
                 {" "}
-                <Typography sx={{ textAlign: "start" }}>Country*</Typography>
+                <Typography sx={{ textAlign: "start" }}>{lang === "en"?en.section10_country:rf.section10_country}</Typography>
                 <select
+                required
                   name="country"
                   {...register("country")}
                   style={{
@@ -1484,9 +1503,11 @@ export default function ContactUs() {
               </Grid>
               <Grid lg={12} md={12} xs={12}>
                 <Typography sx={{ textAlign: "start" }}>
-                  Tell us about your interest : *
+                {lang === "en"?en.section10_comment:rf.section10_comment}
+                 
                 </Typography> 
                 <TextField
+                required
                   fullWidth
                   id="outlined-multiline-static"
                   multiline
@@ -1501,17 +1522,17 @@ export default function ContactUs() {
               sx={{ display: "flex" }}
               control={
                 <Checkbox
+                required
                   value="allowExtraEmails"
                   color="primary"
                 />
               }
-              label="I agree to receive emails about products, services, and/or promotions from BIOMIID, and its affiliates"
+              label= {lang === "en"?en.section10_agreement1:rf.section10_agreement1}
             />
             <Typography sx={{ textAlign: "start" }}>
-              By clicking “Submit” I hereby confirm that the information I have
-              supplied is true, accurate, and complete.To learn how BIOMIID
-              processes personal data, see our &nbsp;
-              <span style={{ color: "cornflowerblue" }}>Privacy Policy</span>
+            {lang === "en"?en.section10_agreement2:rf.section10_agreement2}
+               &nbsp;
+              <span style={{ color: "cornflowerblue" }}>{lang === "en"?en.section10_privacy_policy:rf.section10_privacy_policy}</span>
             </Typography>
             <br />
             <br />
@@ -1521,7 +1542,7 @@ export default function ContactUs() {
               size="large"
               className={Style.contact_button}
             >
-              Submit
+              {lang === "en"?en.section10_contact_form_button_text:rf.section10_contact_form_button_text}
             </Button>
           </Box>
           <br />

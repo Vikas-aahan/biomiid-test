@@ -6,7 +6,7 @@ import TopNav from './top-nav'
 export default function UserLayout({children}) {
   return (
     <div>
-        <TopNav/>
+      
         <Header/>
         {children}
         <Footer/>
