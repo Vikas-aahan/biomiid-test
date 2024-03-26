@@ -4,6 +4,7 @@ import Style from "../../Css/home.module.css";
 import rightImg from "../../Images/verify.png";
 import en from "../../lang/en";
 import rf from "../../lang/rf";
+import { HashLink } from "react-router-hash-link";
 
 export default function About() {
   const [lang, setLang] = React.useState("");
@@ -13,6 +14,10 @@ export default function About() {
    setLang(lan);
 
   },[])
+  const Setdata = async(value)=>{
+    localStorage.setItem("radioOption", value);
+    window.location.reload();
+   }
   return (
     <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
@@ -150,10 +155,16 @@ export default function About() {
          {lang === "en"?en.section9_content4:rf.section9_content4}
        
       </Typography>
-      <Button variant="contained" size="large" className={Style.About_button}>
+      <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button  variant="contained" size="large" className={Style.About_button}  onClick={()=>{
+              Setdata("CAREERS")
+            }}>
       {lang === "en"?en.section9_careers_button_text:rf.section9_careers_button_text}
        
       </Button>
+      </HashLink>
       <br />
       <br />
       <div id="contact"></div>

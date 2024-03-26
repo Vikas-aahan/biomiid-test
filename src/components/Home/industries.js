@@ -9,6 +9,7 @@ import travelImg from "../../Images/travel.png";
 import sharImg from "../../Images/sharing_economy.png";
 import en from "../../lang/en";
 import rf from "../../lang/rf";
+import { HashLink } from "react-router-hash-link";
 
 export default function Industries() {
   const [lang, setLang] = React.useState("");
@@ -18,6 +19,10 @@ export default function Industries() {
    setLang(lan);
 
   },[])
+  const Setdata = async(value)=>{
+    localStorage.setItem("radioOption", value);
+    window.location.reload();
+   }
   return (
     <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}> {lang === "en"?en.section6_title:rf.section6_title}</Typography>
@@ -123,13 +128,19 @@ export default function Industries() {
       
        
       </Grid><br/><br/><br/><br/><br/>
-      <Button
+      <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.Industries_button}
+            onClick={()=>{
+              Setdata("SUPPORT")
+            }}
           >{lang === "en"?en.section6_button_text:rf.section6_button_text}
          
-          </Button>
+          </Button></HashLink>
           <div id="individuals"></div>
     </div>
   );

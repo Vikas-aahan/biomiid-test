@@ -23,7 +23,7 @@ import en from "../lang/en";
 import rf from "../lang/rf";
 import Popover from "@mui/material/Popover";
 import { Link } from "react-router-dom";
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, Select } from "@mui/material";
 
 function ResponsiveAppBar({page}) {
   console.log("page==>",page);
@@ -262,7 +262,7 @@ function ResponsiveAppBar({page}) {
                       }}
                       onClick={handleClose}
                     >
-                      eID Verification
+                       {lang === "en" ? en.section2_title : rf.section2_title}
                     </Typography>
                   </HashLink>
                   <HashLink
@@ -282,7 +282,7 @@ function ResponsiveAppBar({page}) {
                       }}
                       onClick={handleClose}
                     >
-                      Identity Verification
+                     {lang === "en" ? en.section4_title : rf.section4_title}
                     </Typography>
                   </HashLink>
                   <HashLink
@@ -302,7 +302,7 @@ function ResponsiveAppBar({page}) {
                       }}
                       onClick={handleClose}
                     >
-                      Biometric Authentification
+                      {lang === "en" ? en.section3_title : rf.section3_title}
                     </Typography>
                   </HashLink>
                   <HashLink
@@ -322,7 +322,7 @@ function ResponsiveAppBar({page}) {
                       }}
                       onClick={handleClose}
                     >
-                      Digital Identity Network
+                       {lang === "en" ? en.section5_title : rf.section5_title}
                     </Typography>
                   </HashLink>
                   <Typography
@@ -352,7 +352,7 @@ function ResponsiveAppBar({page}) {
                       }}
                       onClick={handleClose}
                     >
-                      Industries
+                      {lang === "en" ? en.section6_title : rf.section6_title}
                     </Typography>
                   </HashLink>
                 </Popover>
@@ -436,19 +436,20 @@ function ResponsiveAppBar({page}) {
                 </HashLink>
               </Button>
 
-              <FormControl sx={{ marginTop: "1rem" }}>
-                <NativeSelect
+              <FormControl sx={{ marginTop: "1.5rem" }} >
+                <select
                   className={Style.lan_change_hover_select}
                   onChange={handleLanguageChange}
                   value={localStorage.getItem("language")}
+                 
                 >
-                  <option className={Style.lan_change_hover} value={"en"}>
+                  <option className={Style.lan_change_hover}  value="en">
                     EN
                   </option>
-                  <option className={Style.lan_change_hover} value={"fr"}>
+                  <option className={Style.lan_change_hover} value="fr">
                     FR
                   </option>
-                </NativeSelect>
+                </select>
               </FormControl>
             </Box>
 

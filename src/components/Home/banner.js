@@ -5,6 +5,7 @@ import Style from "../../Css/home.module.css";
 import buttonImg from "../../Images/watch_video_white_1.png";
 import en from "../../lang/en";
 import rf from "../../lang/rf";
+import { HashLink } from "react-router-hash-link";
 export default function Banner() {
   const [lang, setLang] = React.useState("");
   
@@ -24,13 +25,16 @@ export default function Banner() {
         {lang === "en"?en.header_messages:rf.header_messages}
         </Typography>
         <div className={Style.banner_button_outer}>
-          <Button
+        <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.banner_button_gettouch}
           >
            {lang === "en"?en.header_left_button_text:rf.header_left_button_text}
-          </Button>
+          </Button></HashLink>
           <Button
             variant="outlined"
             size="large"

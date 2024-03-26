@@ -14,6 +14,7 @@ import "react-international-phone/style.css";
 import Swal from "sweetalert2";
 import en from "../../lang/en";
 import rf from "../../lang/rf";
+import { Link } from "react-router-dom";
 
 const countryCodeList = [
   {
@@ -1239,7 +1240,9 @@ export default function ContactUs() {
   React.useEffect(()=>{
    const lan = localStorage.getItem("language");
    setLang(lan);
-
+   const option = localStorage.getItem("radioOption");
+   setValue(option);
+   
   },[])
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -1343,6 +1346,7 @@ export default function ContactUs() {
                     className={Style.contact_radio_outer}
                     name="radio-buttons-group"
                     onChange={handleChange}
+                    value={value1}
                   >
                     <FormControlLabel
                       value="SALES"
@@ -1470,7 +1474,7 @@ export default function ContactUs() {
                 <div style={{ display: "flex", alignItems: "flex-end" }}>
                   <PhoneInput
                   required
-                    defaultCountry="ua"
+                    defaultCountry="fr"
                     value={phone}
                     onChange={(phone) => setPhone(phone)}
                     style={{ width: "44rem", height: "3rem" }}
@@ -1532,7 +1536,7 @@ export default function ContactUs() {
             <Typography sx={{ textAlign: "start" }}>
             {lang === "en"?en.section10_agreement2:rf.section10_agreement2}
                &nbsp;
-              <span style={{ color: "cornflowerblue" }}>{lang === "en"?en.section10_privacy_policy:rf.section10_privacy_policy}</span>
+              <Link to="/privacy-policy" style={{textDecoration:"none"}}><span style={{ color: "cornflowerblue" }}>{lang === "en"?en.section10_privacy_policy:rf.section10_privacy_policy}</span></Link>
             </Typography>
             <br />
             <br />

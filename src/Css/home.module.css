@@ -82,7 +82,7 @@
   text-align: start;
   color: #000066 !important;
   font-family: Arial !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 .solution_outer_div {
   padding-left: 7rem;
@@ -157,7 +157,7 @@
   display: flex;
   align-items: center;
   line-height: 42px !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   gap: 1rem !important;
 }
 .individual_textbottom_head {
@@ -233,9 +233,9 @@
   margin-top: 1.5rem !important;
   font-size: 36px !important;
   text-align: start;
-  color: #000000 !important;
+  color: #000066 !important;
   font-family: Arial !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 .contact_text {
   text-align: start;
@@ -412,7 +412,6 @@
   }
   .solution_grid_head {
     font-size: 24px !important;
-   
     color: #000066 !important;
     line-height: 24px !important;
   }

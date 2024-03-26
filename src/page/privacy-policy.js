@@ -4,6 +4,7 @@ import ten from './../lang/p-en';
 import Ren from './../lang/p-rf';
 import Style from '../Css/term-service.module.css'
 import UserLayout from '../Layout';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 export default function PrivacyPolicy() {
     const [lang, setLang] = React.useState("");
@@ -48,37 +49,37 @@ export default function PrivacyPolicy() {
         {lang === "en"?ten.section2_subtitle1_content3:Ren.section2_subtitle1_content3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content3_1:Ren.section2_subtitle1_content3_1}
+        <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content3_1:Ren.section2_subtitle1_content3_1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content3_2:Ren.section2_subtitle1_content3_2}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content3_2:Ren.section2_subtitle1_content3_2}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content3_3:Ren.section2_subtitle1_content3_3}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content3_3:Ren.section2_subtitle1_content3_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content3_4:Ren.section2_subtitle1_content3_4}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content3_4:Ren.section2_subtitle1_content3_4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content3_5:Ren.section2_subtitle1_content3_5}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content3_5:Ren.section2_subtitle1_content3_5}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section2_subtitle1_content4:Ren.section2_subtitle1_content4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content4_1:Ren.section2_subtitle1_content4_1}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content4_1:Ren.section2_subtitle1_content4_1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content4_2:Ren.section2_subtitle1_content4_2}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content4_2:Ren.section2_subtitle1_content4_2}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content4_3:Ren.section2_subtitle1_content4_3}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content4_3:Ren.section2_subtitle1_content4_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content4_4:Ren.section2_subtitle1_content4_4}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content4_4:Ren.section2_subtitle1_content4_4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section2_subtitle1_content4_5:Ren.section2_subtitle1_content4_5}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section2_subtitle1_content4_5:Ren.section2_subtitle1_content4_5}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section2_subtitle1_content5:Ren.section2_subtitle1_content5}
@@ -144,37 +145,37 @@ export default function PrivacyPolicy() {
         {lang === "en"?ten.section3_subtitle1_content3:Ren.section3_subtitle1_content3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content3_1:Ren.section3_subtitle1_content3_1}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content3_1:Ren.section3_subtitle1_content3_1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content3_2:Ren.section3_subtitle1_content3_2}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content3_2:Ren.section3_subtitle1_content3_2}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content3_3:Ren.section3_subtitle1_content3_3}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content3_3:Ren.section3_subtitle1_content3_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content3_4:Ren.section3_subtitle1_content3_4}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content3_4:Ren.section3_subtitle1_content3_4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content3_5:Ren.section3_subtitle1_content3_5}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content3_5:Ren.section3_subtitle1_content3_5}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section3_subtitle1_content4:Ren.section3_subtitle1_content4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content4_1:Ren.section3_subtitle1_content4_1}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content4_1:Ren.section3_subtitle1_content4_1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content4_2:Ren.section3_subtitle1_content4_2}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content4_2:Ren.section3_subtitle1_content4_2}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content4_3:Ren.section3_subtitle1_content4_3}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content4_3:Ren.section3_subtitle1_content4_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content4_4:Ren.section3_subtitle1_content4_4}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content4_4:Ren.section3_subtitle1_content4_4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle1_content4_5:Ren.section3_subtitle1_content4_5}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle1_content4_5:Ren.section3_subtitle1_content4_5}
      </Typography>
      <Typography className={Style.sub}>
         {lang === "en"?ten.section3_subtitle2:Ren.section3_subtitle2}
@@ -189,22 +190,22 @@ export default function PrivacyPolicy() {
         {lang === "en"?ten.section3_subtitle3_content1:Ren.section3_subtitle3_content1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle3_content1_1:Ren.section3_subtitle3_content1_1}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle3_content1_1:Ren.section3_subtitle3_content1_1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle3_content1_2:Ren.section3_subtitle3_content1_2}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle3_content1_2:Ren.section3_subtitle3_content1_2}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle3_content1_3:Ren.section3_subtitle3_content1_3}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle3_content1_3:Ren.section3_subtitle3_content1_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle3_content1_4:Ren.section3_subtitle3_content1_4}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle3_content1_4:Ren.section3_subtitle3_content1_4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle3_content1_5:Ren.section3_subtitle3_content1_5}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle3_content1_5:Ren.section3_subtitle3_content1_5}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section3_subtitle3_content2:Ren.section3_subtitle3_content2}
+     <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section3_subtitle3_content2:Ren.section3_subtitle3_content2}
      </Typography>
      <Typography className={Style.sub_title}>
         {lang === "en"?ten.section4_title:Ren.section4_title}
@@ -222,22 +223,22 @@ export default function PrivacyPolicy() {
         {lang === "en"?ten.section5_content1:Ren.section5_content1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content1_1:Ren.section5_content1_1}
+     <span style={{color:'#000066'}}> Service Providers- </span>{lang === "en"?ten.section5_content1_1:Ren.section5_content1_1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content1_2:Ren.section5_content1_2}
+     <span style={{color:'#000066'}}> Disclosing information to Public- </span>{lang === "en"?ten.section5_content1_2:Ren.section5_content1_2}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content1_3:Ren.section5_content1_3}
+     <span style={{color:'#000066'}}> Financial Services- </span>{lang === "en"?ten.section5_content1_3:Ren.section5_content1_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content1_4:Ren.section5_content1_4}
+     <span style={{color:'#000066'}}> Affiliates- </span>{lang === "en"?ten.section5_content1_4:Ren.section5_content1_4}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content1_5:Ren.section5_content1_5}
+     <span style={{color:'#000066'}}> Legal-</span> {lang === "en"?ten.section5_content1_5:Ren.section5_content1_5}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content1_6:Ren.section5_content1_6}
+     <span style={{color:'#000066'}}>Security and Safety-</span> {lang === "en"?ten.section5_content1_6:Ren.section5_content1_6}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section5_content1_6_1:Ren.section5_content1_6_1}
@@ -264,10 +265,10 @@ export default function PrivacyPolicy() {
         {lang === "en"?ten.section7_title:Ren.section7_title}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section7_content1:Ren.section7_content1}
+     <span style={{color:'#000066'}}>Preference for Communication-</span> {lang === "en"?ten.section7_content1:Ren.section7_content1}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section7_content2:Ren.section7_content2}
+     <span style={{color:'#000066'}}>Choices for Cookies-</span> {lang === "en"?ten.section7_content2:Ren.section7_content2}
      </Typography>
      <Typography className={Style.sub_title}>
         {lang === "en"?ten.section8_title:Ren.section8_title}

@@ -12,6 +12,7 @@ import didnLogo from "../../Images/digital_id.png";
 import solutionImg from "../../Images/homePicture.png"
 import en from "../../lang/en";
 import rf from "../../lang/rf";
+import { HashLink } from "react-router-hash-link";
 
 export default function OurSolution() {
   const [lang, setLang] = React.useState("");
@@ -21,6 +22,10 @@ export default function OurSolution() {
       setLang(lan);
 
      },[])
+  const Setdata = async(value)=>{
+      localStorage.setItem("radioOption", value);
+      window.location.reload();
+     }
   return (
     <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
@@ -106,7 +111,10 @@ export default function OurSolution() {
             {lang === "en"?en.section2_content:rf.section2_content}
           </Typography>
           <br />
-          <Button
+          <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.banner_button_gettouch}
@@ -114,6 +122,7 @@ export default function OurSolution() {
            
             {lang === "en"?en.section10_subtitle:rf.section10_subtitle}
           </Button>
+          </HashLink>
         </Grid>
         <Grid lg={5} md={12} xs={12}>
           <img style={{ width: "100%" }} src={idImg} />
@@ -141,14 +150,21 @@ export default function OurSolution() {
            
           </Typography>
           <br />
-          <Button
+          <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.banner_button_gettouch}
+            onClick={()=>{
+              Setdata("SALES")
+            }}
           >
            
             {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
+          </HashLink>
         </Grid>
       </Grid>
       <Grid container id="identity-verification">
@@ -170,14 +186,21 @@ export default function OurSolution() {
             
           </Typography>
           <br />
-          <Button
+          <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.banner_button_gettouch}
+            onClick={()=>{
+              Setdata("SALES")
+            }}
           >
            
             {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
+          </HashLink>
         </Grid>
         <Grid lg={6} md={12} xs={12}>
           <img style={{ width: "85%" }} src={IdenImg} />
@@ -209,14 +232,21 @@ export default function OurSolution() {
             
           </Typography>
           <br />
-          <Button
+          <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.banner_button_gettouch}
+            onClick={()=>{
+              Setdata("SALES")
+            }}
           >
            
             {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
+          </HashLink>
         </Grid>
       </Grid>
       <div id="industries"></div>

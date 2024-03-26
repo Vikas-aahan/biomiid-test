@@ -13,6 +13,7 @@ import privacyImg from "../../Images/privay_by_design.png";
 import interImg from "../../Images/interoperability.png";
 import en from "../../lang/en";
 import rf from "../../lang/rf";
+import { HashLink } from "react-router-hash-link";
 
 export default function Organization() {
   const [lang, setLang] = React.useState("");
@@ -22,6 +23,10 @@ export default function Organization() {
    setLang(lan);
 
   },[])
+  const Setdata = async(value)=>{
+    localStorage.setItem("radioOption", value);
+    window.location.reload();
+   }
   return (
     <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
@@ -209,14 +214,22 @@ export default function Organization() {
       </Typography>
       <br/><br/>
       <br/><br/>
-      <Button
+      <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            ><Button
             variant="contained"
             size="large"
             className={Style.Organizations_button}
+            onClick={()=>{
+              Setdata("RELYING PARTY PARTNER")
+            }}
           >
             {lang === "en"?en.section8_button_text:rf.section8_button_text}
             
-          </Button><br/><br/>
+          </Button>
+          </HashLink>
+          <br/><br/>
           <div id="about"></div>
     </div>
   );
