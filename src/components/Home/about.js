@@ -18,13 +18,12 @@ export default function About() {
       <Typography className={Style.solution_heading_dif}>
       {lang === "en"?en.section9_title:rf.section9_title}</Typography>
       <br />
-      <br />
-      <br />
+    
 
       <Typography
         sx={{
           textAlign: "start",
-          marginTop: "12px",
+          marginTop: "8px",
           fontSize: "20px",
           lineHeight: "24px",
         }}
@@ -35,7 +34,7 @@ export default function About() {
       <Typography
         sx={{
           textAlign: "start",
-          marginTop: "20px",
+          marginTop: "10px",
           fontSize: "20px",
           lineHeight: "24px",
         }}
@@ -46,7 +45,7 @@ export default function About() {
       <Typography
         sx={{
           textAlign: "start",
-          marginTop: "20px",
+          marginTop: "10px",
           fontSize: "20px",
           lineHeight: "24px",
         }}
@@ -55,15 +54,14 @@ export default function About() {
         
       </Typography>
       <br />
-      <br />
-      <br />
-      <br />
+      
+      
       <Typography className={Style.solution_heading_dif_head}>
       {lang === "en"?en.section9_subtitle1:rf.section9_subtitle1}
        
       </Typography>
-      <br />
-      <br />
+      
+      
       <Grid container className={Style.Individual_card_grid_outer}>
         <Grid lg={4} md={6} xs={12} className={Style.Individual_card_grid}>
           <Card variant="outlined" className={Style.about_card}>
@@ -126,7 +124,7 @@ export default function About() {
       <Typography
         sx={{
           textAlign: "start",
-          marginTop: "20px",
+          marginTop: "8px",
           fontSize: "18px",
           lineHeight: "21px",
         }}
@@ -135,7 +133,7 @@ export default function About() {
        
       </Typography>
       <br />
-      <br />
+  
       <Typography className={Style.solution_heading_dif_head}>
       {lang === "en"?en.section9_subtitle2:rf.section9_subtitle2}
       
@@ -143,7 +141,7 @@ export default function About() {
       <Typography
         sx={{
           textAlign: "start",
-          marginTop: "28px",
+          marginTop: "20px",
           fontSize: "20px",
           lineHeight: "26px",
           marginBottom: "5rem",

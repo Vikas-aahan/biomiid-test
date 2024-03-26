@@ -102,8 +102,8 @@
 	
     section9_title: "A propos de nous",
 	section9_content1: "Nous sommes une équipe de passionnés animés par deux choses : la sécurité et l'innovation !",
-	section9_content23: "Nous pensons qu’une identité numérique forte est la pierre angulaire d’un monde en ligne sûr et fiable.",
-	section9_content2: "Le problème? Les systèmes de vérification existants sont encombrants, coûteux et rendent tout le monde vulnérable – individus, entreprises et organisations. C'est pourquoi nous avons créé BIOMID. Notre mission est de créer l’écosystème d’identité numérique le plus fiable, le plus pratique, le plus sécurisé et le plus respectueux de la confidentialité au monde.",
+	section9_content22: "Nous pensons qu’une identité numérique forte est la pierre angulaire d’un monde en ligne sûr et fiable.",
+	section9_content23: "Le problème? Les systèmes de vérification existants sont encombrants, coûteux et rendent tout le monde vulnérable – individus, entreprises et organisations. C'est pourquoi nous avons créé BIOMID. Notre mission est de créer l’écosystème d’identité numérique le plus fiable, le plus pratique, le plus sécurisé et le plus respectueux de la confidentialité au monde.",
 	section9_subtitle1: "Voici ce qui nous différencie :",
     section9_effortless_label: "Sans effort pour vous",
 	section9_seffortless_content: "Nous simplifions la complexité de la vérification d’identité." ,

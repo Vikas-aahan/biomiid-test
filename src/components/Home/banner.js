@@ -14,6 +14,7 @@ export default function Banner() {
 
      },[])
   return (
+    <>
     <Grid container className={Style.banner_outer_grid} >
       <Grid lg={6} md={12} xs={12} className={Style.banner_grid_text}>
         <Typography className={Style.banner_heading}>
@@ -44,5 +45,7 @@ export default function Banner() {
         {/* <img className={Style.banner_img}   src={bannerImg} /> */}
       </Grid>
     </Grid>
+    <div id="our-solution"></div>
+    </>
   );
 }

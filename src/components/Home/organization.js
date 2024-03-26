@@ -30,7 +30,7 @@ export default function Organization() {
       </Typography>
       <Typography className={Style.individual_heading_dif_head}>
         <img className={Style.Individuals_logo} src={indiImg} />
-        &nbsp; 
+       
         {lang === "en"?en.section8_subtitle1:rf.section8_subtitle1}
        
       </Typography>
@@ -188,21 +188,21 @@ export default function Organization() {
       <Typography className={Style.solution_heading_dif_head}>
       {lang === "en"?en.section8_subtitle3:rf.section8_subtitle3}
        
-      </Typography><br/>
+      </Typography>
       <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
       {lang === "en"?en.section8_content2:rf.section8_content2}
         
-      </Typography><br/>
+      </Typography>
       <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
       {lang === "en"?en.section8_content3:rf.section8_content3}
         
       </Typography>
-      <br/>
+      
       <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
       {lang === "en"?en.section8_content4:rf.section8_content4}
         
       </Typography>
-      <br/>
+     
       <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
       {lang === "en"?en.section8_content5:rf.section8_content5}
         

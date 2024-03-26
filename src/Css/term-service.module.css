@@ -1,0 +1,27 @@
+.header_title{
+   font-weight: 600 !important;
+   font-size: 45px !important; 
+   margin-top: 8rem !important;
+   color: #000066 !important;
+}
+.sub_title{
+    margin-top: 1rem !important;
+    font-size: 40px !important; 
+    text-align: start !important;
+    color: #000066 !important;
+    font-weight: 600 !important;
+}
+.outer_div{
+    padding: 3rem;
+}
+.paragraph{
+    font-size: 20px !important; 
+    text-align: start;
+    margin-top: 15px !important;
+}
+.sub{
+    font-size: 28px !important; 
+    text-align: start;
+    color: #000066 !important;
+    margin-top: 1rem !important;
+}

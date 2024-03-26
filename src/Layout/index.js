@@ -3,11 +3,11 @@ import Header from './header'
 import Footer from './footer'
 import TopNav from './top-nav'
 
-export default function UserLayout({children}) {
+export default function UserLayout({children,page}) {
   return (
     <div>
       
-        <Header/>
+        <Header page={page}/>
         {children}
         <Footer/>
     </div>

@@ -4,6 +4,21 @@
 .logo_grid_footer{
     padding: 2rem;
 }
+.lan_change_hover_select{
+    padding: 5px !important; 
+    color: white !important; 
+    font-weight: 600  !important;
+}
+
+.lan_change_hover{
+    font-size: 20px !important;
+     color: black !important;
+     background-color: white !important;
+}
+option.lan_change_hover:hover {
+   background-color: #7F00FF !important;
+  }
+ 
 .tab_footer{
     color: white;
     font-size: 24px !important;
@@ -69,6 +84,10 @@
     border-radius: 9px !important;
 }
 @media  screen and (max-width: 600px) {
+    .icon_grid_footer{
+        text-align: center;
+        margin-top: 5rem;
+    }
     .text_top_nav_button{
    
         width: 50% !important;
@@ -88,6 +107,11 @@
     }
 }
 @media  screen and (max-width: 415px) {
+    .lower_grid_footer{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
     .text_top_nav_button{
    
         width: 100% !important;

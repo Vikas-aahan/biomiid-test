@@ -77,7 +77,7 @@
 
 }
 .solution_heading_dif_head {
-  margin-top: 2rem !important;
+  margin-top: 0rem !important;
   font-size: 40px !important;
   text-align: start;
   color: #000066 !important;
@@ -92,7 +92,7 @@
 }
 .solution_grid_head {
   font-size: 28px !important;
-  font-weight: 600 !important;
+ 
   color: #000066 !important;
   line-height: 30px !important;
 }
@@ -158,11 +158,12 @@
   align-items: center;
   line-height: 42px !important;
   font-weight: 600 !important;
+  gap: 1rem !important;
 }
 .individual_textbottom_head {
   text-align: start;
   font-size: 20px !important;
-  line-height: 34px !important;
+  line-height: 28px !important;
 }
 .individual_textbottom_head_benefit {
   font-size: 40px !important;
@@ -260,6 +261,7 @@
   border-radius: 14px !important;
 }
 @media screen and (max-width: 1367px) {
+  
   .banner_heading {
     margin-top: 1rem !important;
     font-size: 55px !important;
@@ -268,6 +270,15 @@
     font-weight: 600 !important;
     font-family: "Poppins", sans-serif !important;
     line-height: 74px !important;
+  }
+  .Industries_button {
+    font-size: 20px !important;
+    background-color: #7f00ff !important ;
+    font-weight: 600 !important;
+    width: 50%;
+    text-transform: none !important;
+    padding: 2rem !important;
+    border-radius: 14px !important;
   }
 
 }
@@ -309,7 +320,7 @@
   }
   .solution_grid_head {
     font-size: 22px !important;
-    font-weight: 600 !important;
+    
     color: #000066 !important;
     line-height: 24px !important;
   }
@@ -401,12 +412,12 @@
   }
   .solution_grid_head {
     font-size: 24px !important;
-    font-weight: 600 !important;
+   
     color: #000066 !important;
     line-height: 24px !important;
   }
   .banner_heading {
-    margin-top: 2rem !important;
+    margin-top: 6rem !important;
     font-size: 43px !important;
     text-align: start;
     color: white;
@@ -430,6 +441,7 @@
   }
   .solution_outer_div {
     padding: 1rem;
+    margin-top: 5rem;
   }
   .solution_heading_dif {
     font-size: 36px !important;
@@ -472,7 +484,7 @@
     line-height: 38px !important;
   }
   .banner_outer_grid {
-    margin-top: 4rem !important;
+    margin-top: 2rem !important;
     background-image: url('../Images/background-mobile.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -499,11 +511,11 @@
 @media screen and (max-width: 400px) {
   .solution_img{
     width: 100% ;
-    margin-top: 6rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
   }
   .banner_outer_grid {
-    margin-top: 7rem !important;
+    margin-top: 0rem !important;
     background-image: url('../Images/background-mobile.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -554,11 +566,11 @@
   }
   .solution_grid_head {
     font-size: 18px !important;
-    font-weight: 600 !important;
+   
     color: #000066 !important;
   }
   .banner_heading {
-    margin-top: 0rem !important;
+    margin-top: 6rem !important;
     font-size: 38px !important;
     text-align: start;
     color: white;

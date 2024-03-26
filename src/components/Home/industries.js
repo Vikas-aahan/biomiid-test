@@ -26,7 +26,7 @@ export default function Industries() {
         
       </Typography>
       <Typography
-        sx={{ textAlign: "start", fontWeight: "600", fontSize: "28px" }}
+        sx={{ textAlign: "start", fontSize: "28px" }}
       >
        {lang === "en"?en.section6_content:rf.section6_content}
       

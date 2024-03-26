@@ -22,7 +22,7 @@ export default function OurSolution() {
 
      },[])
   return (
-    <div className={Style.solution_outer_div}>
+    <div className={Style.solution_outer_div} >
       <Typography className={Style.solution_heading_dif}>
       {lang === "en"?en.section1_title:rf.section1_title}
       </Typography>

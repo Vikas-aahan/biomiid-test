@@ -21,20 +21,32 @@ import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
 import en from "../lang/en";
 import rf from "../lang/rf";
+import Popover from "@mui/material/Popover";
 import { Link } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
 
-
-function ResponsiveAppBar() {
+function ResponsiveAppBar({page}) {
+  console.log("page==>",page);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [lang, setLang] = React.useState("");
-  
-     React.useEffect(()=>{
-      const lan = localStorage.getItem("language");
-      setLang(lan);
 
-     },[])
+  React.useEffect(() => {
+    const lan = localStorage.getItem("language");
+    setLang(lan);
+  }, []);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -54,16 +66,23 @@ function ResponsiveAppBar() {
     handleCloseNavMenu();
   }, []);
 
-  
   const handleLanguageChange = (e) => {
-  
     localStorage.setItem("language", e.target.value);
     window.location.reload();
-    
-};
+  };
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: "#000066" }}>
+      <AppBar
+        component="nav"
+        position="fixed"
+        sx={{ backgroundColor: "#000066" }}
+      >
         <TopNav />
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -75,10 +94,16 @@ function ResponsiveAppBar() {
                 width: "25%",
               }}
             >
-              <HashLink
-                    to="/#banner"
-                  
-                  ><img style={{ width: "57%" }} src={logo} /></HashLink>
+              {page !== "Home"? <Link
+              to="/"
+           >
+             <img style={{ width: "57%" }} src={logo} onClick={goToTop} />
+           </Link>: <HashLink
+           
+              >
+                <img style={{ width: "57%" }} src={logo} onClick={goToTop} />
+              </HashLink>}
+             
             </Box>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -110,133 +135,20 @@ function ResponsiveAppBar() {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <PopupState variant="popper" popupId="demo-popup-popper">
-                    {(popupState) => (
-                      <div>
-                        <Typography
-                          textAlign="center"
-                          {...bindToggle(popupState)}
-                        >
-                          Solutions
-                        </Typography>
-
-                        <Popper
-                          {...bindPopper(popupState)}
-                          transition
-                          sx={{ zIndex: 9999 }}
-                        >
-                          {({ TransitionProps }) => (
-                            <Fade {...TransitionProps} timeout={350}>
-                              <Paper
-                                sx={{
-                                  padding: "10px",
-                                  width: "18rem",
-                                  borderRadius: "20px",
-                                }}
-                              >
-                                <HashLink
-                                  to="/#eId-verification"
-                                  style={{ textDecoration: "none" }}
-                                >
-                                  <Typography
-                                    sx={{
-                                      color: "#000066",
-                                      fontWeight: "600",
-                                      lineHeight: "38px",
-                                      marginLeft: "20px",
-                                    }}
-                                    {...bindToggle(popupState)}
-                                  >
-                                    eID Verification
-                                  </Typography>
-                                </HashLink>
-                                <HashLink
-                                  to="/#identity-verification"
-                                  style={{ textDecoration: "none" }}
-                                >
-                                  <Typography
-                                    sx={{
-                                      color: "#000066",
-                                      fontWeight: "600",
-                                      lineHeight: "38px",
-                                      marginLeft: "20px",
-                                    }}
-                                    {...bindToggle(popupState)}
-                                  >
-                                    Identity Verification
-                                  </Typography>
-                                </HashLink>
-                                <HashLink
-                                  to="/#biometric-authentication"
-                                  style={{ textDecoration: "none" }}
-                                >
-                                  <Typography
-                                    sx={{
-                                      color: "#000066",
-                                      fontWeight: "600",
-                                      lineHeight: "38px",
-                                      marginLeft: "20px",
-                                    }}
-                                    {...bindToggle(popupState)}
-                                  >
-                                    Biometric Authentification
-                                  </Typography>
-                                </HashLink>
-                                <HashLink
-                                  to="/#digital-identity-network"
-                                  style={{ textDecoration: "none" }}
-                                >
-                                  <Typography
-                                    sx={{
-                                      color: "#000066",
-                                      fontWeight: "600",
-                                      lineHeight: "38px",
-                                      marginLeft: "20px",
-                                    }}
-                                    {...bindToggle(popupState)}
-                                  >
-                                    Digital Identity Network
-                                  </Typography>
-                                </HashLink>
-                                <Typography
-                                  sx={{
-                                    color: "#000066",
-                                    fontWeight: "600",
-                                    lineHeight: "0px",
-                                  }}
-                                >
-                                  ________________________________
-                                </Typography>
-                                <HashLink
-                                  to="/#industries"
-                                  style={{ textDecoration: "none" }}
-                                >
-                                  <Typography
-                                    sx={{
-                                      color: "#000066",
-                                      fontWeight: "600",
-                                      lineHeight: "50px",
-                                      marginLeft: "20px",
-                                    }}
-                                    {...bindToggle(popupState)}
-                                  >
-                                    Industries
-                                  </Typography>
-                                </HashLink>
-                              </Paper>
-                            </Fade>
-                          )}
-                        </Popper>
-                      </div>
-                    )}
-                  </PopupState>
+                  <Typography textAlign="center" onClick={handleClick}>
+                  {lang === "en" ? en.section1_title10 : rf.section1_title10}
+                  </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <HashLink
                     to="/#organization"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    <Typography textAlign="center">{lang === "en"?en.header_menu_organizations:rf.header_menu_organizations}</Typography>
+                    <Typography textAlign="center">
+                      {lang === "en"
+                        ? en.header_menu_organizations
+                        : rf.header_menu_organizations}
+                    </Typography>
                   </HashLink>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
@@ -244,7 +156,9 @@ function ResponsiveAppBar() {
                     to="/#individuals"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                     {lang === "en"?en.header_menu_individuals:rf.header_menu_individuals}
+                    {lang === "en"
+                      ? en.header_menu_individuals
+                      : rf.header_menu_individuals}
                   </HashLink>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
@@ -252,15 +166,45 @@ function ResponsiveAppBar() {
                     to="/#about"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                     {lang === "en"?en.header_menu_about:rf.header_menu_about}
+                    {lang === "en"
+                      ? en.header_menu_about
+                      : rf.header_menu_about}
                   </HashLink>
                 </MenuItem>
               </Menu>
             </Box>
-            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "none" },
+                justifyContent: "space-between",
+              }}
+            >
               <img style={{ width: "40%" }} src={logo} />
-            </Box>
 
+              <FormControl sx={{ marginTop: "0rem" }}>
+                <NativeSelect
+                  sx={{ padding: "5px", color: "white", fontWeight: "600" }}
+                  onChange={handleLanguageChange}
+                  value={localStorage.getItem("language")}
+                >
+                  <option
+                    style={{ fontSize: "20px", color: "black" }}
+                    value={"en"}
+                  >
+                    EN
+                  </option>
+                  <option
+                    style={{ fontSize: "20px", color: "black" }}
+                    value={"fr"}
+                  >
+                    FR
+                  </option>
+                </NativeSelect>
+              </FormControl>
+            </Box>
+            {/* <Box sx={{ display: { xs: "flex", md: "none" } }}> */}
+
+            {/* </Box> */}
             <Box
               sx={{
                 flexGrow: 1,
@@ -269,132 +213,150 @@ function ResponsiveAppBar() {
                 marginLeft: "0rem",
               }}
             >
-              <PopupState variant="popper" popupId="demo-popup-popper">
-                {(popupState) => (
-                  <div>
-                    <Button
-                      {...bindToggle(popupState)}
+              <HashLink
+                to="/#our-solution"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <Button
+                  onClick={handleClick}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                    display: "block",
+                    textTransform: "capitalize",
+                    fontWeight: "600",
+                    fontSize: "16px",
+                    "&:hover": {
+                      color: "#7F00FF", // Change this to your desired hover color
+                    },
+                  }}
+                >
+                  {lang === "en" ? en.section1_title10 : rf.section1_title10}
+                </Button>
+              </HashLink>
+              <div style={{ borderRadius: "20px" }}>
+                <Popover
+                  id={id}
+                  open={open}
+                  anchorEl={anchorEl}
+                  onClose={handleClose}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                >
+                  <HashLink
+                    to="/#eId-verification"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Typography
                       sx={{
-                        my: 2,
-                        color: "white",
-                        display: "block",
-                        textTransform: "capitalize",
+                        color: "#000066",
                         fontWeight: "600",
-                        fontSize: "18px",
+                        lineHeight: "38px",
+                        paddingLeft:"20px",
+                        "&:hover": {
+                          backgroundColor: "#7F00FF", // Change this to your desired hover color
+                          color:"white"
+                        },
                       }}
+                      onClick={handleClose}
                     >
-                     {lang === "en"?en.section1_title10:rf.section1_title10}
-                    </Button>
-                    <Popper
-                      {...bindPopper(popupState)}
-                      transition
-                      sx={{ zIndex: 9999 }}
+                      eID Verification
+                    </Typography>
+                  </HashLink>
+                  <HashLink
+                    to="/#identity-verification"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#000066",
+                        fontWeight: "600",
+                        lineHeight: "38px",
+                        paddingLeft:"20px",
+                        "&:hover": {
+                          backgroundColor: "#7F00FF", // Change this to your desired hover color
+                          color:"white"
+                        },
+                      }}
+                      onClick={handleClose}
                     >
-                      {({ TransitionProps }) => (
-                        <Fade {...TransitionProps} timeout={350}>
-                          <Paper
-                            sx={{
-                              padding: "10px",
-                              width: "18rem",
-                              borderRadius: "20px",
-                            }}
-                          >
-                            <HashLink
-                              to="/#eId-verification"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <Typography
-                                sx={{
-                                  color: "#000066",
-                                  fontWeight: "600",
-                                  lineHeight: "38px",
-                                  marginLeft: "20px",
-                                }}
-                                {...bindToggle(popupState)}
-                              >
-                                eID Verification
-                              </Typography>
-                            </HashLink>
-                            <HashLink
-                              to="/#identity-verification"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <Typography
-                                sx={{
-                                  color: "#000066",
-                                  fontWeight: "600",
-                                  lineHeight: "38px",
-                                  marginLeft: "20px",
-                                }}
-                                {...bindToggle(popupState)}
-                              >
-                                Identity Verification
-                              </Typography>
-                            </HashLink>
-                            <HashLink
-                              to="/#biometric-authentication"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <Typography
-                                sx={{
-                                  color: "#000066",
-                                  fontWeight: "600",
-                                  lineHeight: "38px",
-                                  marginLeft: "20px",
-                                }}
-                                {...bindToggle(popupState)}
-                              >
-                                Biometric Authentification
-                              </Typography>
-                            </HashLink>
-                            <HashLink
-                              to="/#digital-identity-network"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <Typography
-                                sx={{
-                                  color: "#000066",
-                                  fontWeight: "600",
-                                  lineHeight: "38px",
-                                  marginLeft: "20px",
-                                }}
-                                {...bindToggle(popupState)}
-                              >
-                                Digital Identity Network
-                              </Typography>
-                            </HashLink>
-                            <Typography
-                              sx={{
-                                color: "#000066",
-                                fontWeight: "600",
-                                lineHeight: "0px",
-                              }}
-                            >
-                              ________________________________
-                            </Typography>
-                            <HashLink
-                              to="/#industries"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <Typography
-                                sx={{
-                                  color: "#000066",
-                                  fontWeight: "600",
-                                  lineHeight: "50px",
-                                  marginLeft: "20px",
-                                }}
-                                {...bindToggle(popupState)}
-                              >
-                                Industries
-                              </Typography>
-                            </HashLink>
-                          </Paper>
-                        </Fade>
-                      )}
-                    </Popper>
-                  </div>
-                )}
-              </PopupState>
+                      Identity Verification
+                    </Typography>
+                  </HashLink>
+                  <HashLink
+                    to="/#biometric-authentication"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#000066",
+                        fontWeight: "600",
+                        lineHeight: "38px",
+                        paddingLeft:"20px",
+                        "&:hover": {
+                          backgroundColor: "#7F00FF", // Change this to your desired hover color
+                          color:"white"
+                        },
+                      }}
+                      onClick={handleClose}
+                    >
+                      Biometric Authentification
+                    </Typography>
+                  </HashLink>
+                  <HashLink
+                    to="/#digital-identity-network"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#000066",
+                        fontWeight: "600",
+                        lineHeight: "38px",
+                        paddingLeft:"20px",
+                        "&:hover": {
+                          backgroundColor: "#7F00FF", // Change this to your desired hover color
+                          color:"white"
+                        },
+                      }}
+                      onClick={handleClose}
+                    >
+                      Digital Identity Network
+                    </Typography>
+                  </HashLink>
+                  <Typography
+                    sx={{
+                      color: "#000066",
+                      fontWeight: "600",
+                      lineHeight: "0px",
+                    }}
+                  >
+                    ________________________________________
+                  </Typography>
+                  <HashLink
+                    to="/#industries"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#000066",
+                        fontWeight: "600",
+                        lineHeight: "50px",
+                        marginTop:"10px",
+                        paddingLeft:"20px",
+                        "&:hover": {
+                          backgroundColor: "#7F00FF", // Change this to your desired hover color
+                          color:"white"
+                        },
+                      }}
+                      onClick={handleClose}
+                    >
+                      Industries
+                    </Typography>
+                  </HashLink>
+                </Popover>
+              </div>
               <HashLink
                 to="/#organization"
                 style={{ textDecoration: "none", color: "black" }}
@@ -408,9 +370,14 @@ function ResponsiveAppBar() {
                     textTransform: "capitalize",
                     fontWeight: "600",
                     fontSize: "16px",
+                    "&:hover": {
+                      color: "#7F00FF", // Change this to your desired hover color
+                    },
                   }}
                 >
-                  {lang === "en"?en.header_menu_organizations:rf.header_menu_organizations}
+                  {lang === "en"
+                    ? en.header_menu_organizations
+                    : rf.header_menu_organizations}
                 </Button>
               </HashLink>
               <HashLink
@@ -426,9 +393,14 @@ function ResponsiveAppBar() {
                     textTransform: "capitalize",
                     fontWeight: "600",
                     fontSize: "16px",
+                    "&:hover": {
+                      color: "#7F00FF", // Change this to your desired hover color
+                    },
                   }}
                 >
-                   {lang === "en"?en.header_menu_individuals:rf.header_menu_individuals}
+                  {lang === "en"
+                    ? en.header_menu_individuals
+                    : rf.header_menu_individuals}
                 </Button>
               </HashLink>
               <HashLink
@@ -444,9 +416,12 @@ function ResponsiveAppBar() {
                     textTransform: "capitalize",
                     fontWeight: "600",
                     fontSize: "16px",
+                    "&:hover": {
+                      color: "#7F00FF", // Change this to your desired hover color
+                    },
                   }}
                 >
-                   {lang === "en"?en.header_menu_about:rf.header_menu_about}
+                  {lang === "en" ? en.header_menu_about : rf.header_menu_about}
                 </Button>
               </HashLink>
 
@@ -455,26 +430,22 @@ function ResponsiveAppBar() {
                   to="/#contact"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                   {lang === "en"?en.header_menu_contactus:rf.header_menu_contactus}
+                  {lang === "en"
+                    ? en.header_menu_contactus
+                    : rf.header_menu_contactus}
                 </HashLink>
               </Button>
 
               <FormControl sx={{ marginTop: "1rem" }}>
                 <NativeSelect
-                  sx={{ padding: "5px", color: "white", fontWeight: "600" }}
+                  className={Style.lan_change_hover_select}
                   onChange={handleLanguageChange}
-                 value={localStorage.getItem("language")}
+                  value={localStorage.getItem("language")}
                 >
-                  <option
-                    style={{ fontSize: "20px", color: "black" }}
-                    value={"en"}
-                  >
+                  <option className={Style.lan_change_hover} value={"en"}>
                     EN
                   </option>
-                  <option
-                    style={{ fontSize: "20px", color: "black" }}
-                    value={"fr"}
-                  >
+                  <option className={Style.lan_change_hover} value={"fr"}>
                     FR
                   </option>
                 </NativeSelect>
@@ -506,12 +477,8 @@ function ResponsiveAppBar() {
             </Menu> */}
             </Box>
           </Toolbar>
-        
         </Container>
-       
       </AppBar>
-     
-      
     </>
   );
 }

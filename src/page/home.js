@@ -7,13 +7,13 @@ import Individuals from "../components/Home/Individuals";
 import Organization from "../components/Home/organization";
 import About from "../components/Home/about";
 import ContactUs from "../components/Home/contact-us";
-
 export default function Home({lan,setLang}) {
   return (
     <>
    
-   <div id="banner" >
-    <UserLayout>
+   <div >
+    <UserLayout page={"Home"}>
+   
         <Banner />
         <OurSolution />
         <Industries/>
@@ -21,6 +21,7 @@ export default function Home({lan,setLang}) {
         <Organization/>
         <About/><br/>
         <ContactUs/>
+       
     </UserLayout>
     </div>
     </>

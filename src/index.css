@@ -18,3 +18,15 @@ code {
 .react-international-phone-country-selector-button{
   height: 2.5rem !important;
 }
+.MuiInputBase-root-MuiInput-root::before{
+  border-bottom:"0px" !important;
+}
+.option-hover {
+  background-color: #bb07ed; /* Set your desired hover background color */
+}
+.css-1g12qau-MuiSvgIcon-root-MuiNativeSelect-icon {
+  color: white !important;
+}
+.css-1eed5fa-MuiInputBase-root-MuiInput-root::after{
+  border-bottom:#bb07ed !important;
+}
