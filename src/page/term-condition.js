@@ -146,13 +146,13 @@ export default function TermCondition() {
         {lang === "en"?ten.section5_content1:Ren.section5_content1}
      </Typography>
      <Typography className={Style.sub}>
-        {lang === "en"?ten.section6_title:Ren.section6_title}
+        {lang === "en"?ten.section5_subtitle2:Ren.section5_subtitle2}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section5_content2:Ren.section5_content2}
      </Typography>
      <Typography className={Style.sub_title}>
-        {lang === "en"?ten.section5_title:Ren.section5_title}
+        {lang === "en"?ten.section6_title:Ren.section6_title}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section6_content1:Ren.section6_content1}
@@ -163,6 +163,18 @@ export default function TermCondition() {
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section6_content3:Ren.section6_content3}
      </Typography>
+     {/* <Typography className={Style.sub_title}>
+        {lang === "en"?ten.section5_title:Ren.section5_title}
+     </Typography>
+     <Typography className={Style.paragraph}>
+        {lang === "en"?ten.section6_content1:Ren.section6_content1}
+     </Typography>
+     <Typography className={Style.paragraph}>
+        {lang === "en"?ten.section6_content2:Ren.section6_content2}
+     </Typography>
+     <Typography className={Style.paragraph}>
+        {lang === "en"?ten.section6_content3:Ren.section6_content3}
+     </Typography> */}
      <Typography className={Style.sub_title}>
         {lang === "en"?ten.section7_title:Ren.section7_title}
      </Typography>
@@ -205,13 +217,13 @@ export default function TermCondition() {
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section8_content2:Ren.section8_content2}
      </Typography>
-     <Typography className={Style.sub}>
+     <Typography className={Style.sub_title}>
         {lang === "en"?ten.section9_title:Ren.section9_title}
      </Typography>
      <Typography className={Style.paragraph}>
         {lang === "en"?ten.section9_content:Ren.section9_content}
      </Typography>
-     <Typography className={Style.sub}>
+     <Typography className={Style.sub_title}>
         {lang === "en"?ten.section10_title:Ren.section10_title}
      </Typography>
      <Typography className={Style.paragraph}>

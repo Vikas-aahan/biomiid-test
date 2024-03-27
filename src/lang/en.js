@@ -139,10 +139,12 @@
 	section10_contact_form_button_text: "Submit",
 	
 	footer_all_rights: "© 2023 BIOMIID. All rights reserved",
-	footer_terms: "Wesite Terms of Service",
+	footer_terms: "Website Terms of Service",
 	footer_privacy: "Privacy Policy",
 
-	
+	successfully_submited:"Contact form has been submitted successfully",
+	email_already_exist:"This email address already exists",
+	access_deny:"You are not authorized to submit the contact form"
 
   }
   

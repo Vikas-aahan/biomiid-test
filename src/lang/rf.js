@@ -140,6 +140,8 @@
 	footer_terms: "Conditions d'utilisation du site Web",
 	footer_privacy: "Politique de Confidentialité",
 
-	
+	successfully_submited:"Le formulaire de contact a été soumis avec succès",
+	email_already_exist:"Cette adresse email existe déjà",
+	access_deny:"Vous n'êtes pas autorisé à soumettre le formulaire de contact"
 
   }

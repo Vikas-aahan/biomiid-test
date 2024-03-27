@@ -136,7 +136,7 @@ export default function Industries() {
             size="large"
             className={Style.Industries_button}
             onClick={()=>{
-              Setdata("SUPPORT")
+              Setdata("SALES")
             }}
           >{lang === "en"?en.section6_button_text:rf.section6_button_text}
          

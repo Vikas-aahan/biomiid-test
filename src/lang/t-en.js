@@ -1,6 +1,6 @@
 export default {
     header_title: "BIOMIID  Terms of Service",
-	
+	last_update: "Last Updated: March 28, 2024",
     section1_title: "Introduction",
 	section1_content1: "The following terms of service (“Terms of Service”) govern your use of the Biomiid website (the “Site”) and the Biomiid Service accessed through the Site (“Service”), both of which are operated by Biomiid. (“Biomiid” or “Us”). By using the Site and/or the Service, you irrevocably agree that such use is subject to these Terms of Service. If you do not agree to these Terms of Service, you may not use the Site or the Service. If you are entering into these Terms of Service on behalf of an entity, you represent that you have the actual authority to bind such entity to these Terms of Service.",
 	section1_content2: "Biomiid expressly reserves the right to modify the Terms of Service at any time in its sole discretion, and without prior notice to you, by including such alteration and/or modification in these Terms of Service, along with a notice of the effective date of such modified Terms of Service.",
@@ -89,7 +89,7 @@ export default {
 	section8_subtitle2: "Exclusion",
 	section8_content2: "These nondisclosure obligations do not pertain to (and do not include) details that: (a) is and becoming publicly known without the receiving party's fault; (b) was already known to the intended recipient before it did receive the sensitive information; (c) is legitimately acquired by the recipient from a 3rd party without violating any confidentiality obligations; or (d) is solely owned by the intended recipient without using the confidential information. If permitted by law, a party may also reveal the other party's secret information to the degree that it is necessary by legislation or warrant issued, provided that it cooperates with the other party's efforts to maintain the information's confidentiality.",
 	
-	
+		
 	section9_title: "Indemnification",
 	section9_content: "When any third-party claims are brought against Biomiid due to Customer Properties, Customer agrees to protect Biomiid against such claims (including products or services being offered under the Customer Properties). In the event that Biomiid is found liable for any damages or costs (including reasonable legal fees) related to any third-party claims, the Customer will defend Biomiid and hold it harmless. If the resolution will compel Biomiid to admit responsibility, pay sums that Customer is obligated to pay under this Contract, or undertake or abstain from taking any action, Customer may not settle any dispute without Biomiid's explicit written agreement. Customer and Biomiid shall cooperate in a reasonable manner in the defense of any claim that Biomiid participates in through attorneys of its own choice and at its own expense.",
 	

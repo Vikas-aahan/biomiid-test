@@ -113,18 +113,18 @@ export default function Footer() {
             </HashLink>
           </Grid>
           <Grid lg={2} md={4} xs={12} className={Style.icon_grid_footer}>
-            <img style={{ width: "18%" }} src={facebooklogo} />
+            <Link to="https://www.facebook.com/profile.php?id=61557465283165"><img style={{ width: "18%" }} src={facebooklogo} /></Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <img style={{ width: "18%" }} src={linkdinlogo} />
+            <Link to="https://www.linkedin.com/posts/biomiid_welcome-to-biomiid-where-we-are-revolutionizing-activity-7178454405963276289-N8bh"><img style={{ width: "18%" }} src={linkdinlogo} /></Link>
           </Grid>
         </Grid>
         <Grid container className={Style.lower_grid_footer}>
-          <Grid lg={3}>
+          <Grid lg={6} sx={{textAlign:"start"}}>
             <Typography sx={{ color: "white" }}>
               {lang === "en" ? en.footer_all_rights : rf.footer_all_rights}
             </Typography>
           </Grid>
-          <Grid lg={4} sx={{ display: "flex" }}>
+          <Grid lg={6} sx={{ display: "flex",justifyContent:"flex-end"}}>
             <Link to="/term-of-service">
               <Typography sx={{ color: "white" }}>
                 {lang === "en" ? en.footer_terms : rf.footer_terms}

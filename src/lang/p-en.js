@@ -1,6 +1,6 @@
 export default {
     header_title: "BIOMIID  Privacy Policy",
-	
+	last_update: "Last Updated: March 28, 2024",
     section1_title: "Introduction",
 	section1_content: "The following Privacy Policy of Biomiid is divided into two parts: The first policy applies to users who confirm their identities via the Biomiid Service. The second clause pertains to our clients (Customers) and users of our website (Site).",
 	
@@ -90,16 +90,23 @@ export default {
 	
 	section5_title: "Using Personal data",
 	section5_content1: "The private information we gather is used for the purposes listed in this privacy statement or those explicitly communicated to you. For instance, we gather and use the private data types mentioned previously for the following specific objectives:",
-	section5_content1_1: "In order to accomplish the goals outlined in this statement, we divulge Private Data to vendors or agents acting on our behalf. For instance, businesses we've contracted with to support customer service or help safeguard and secure our services and systems may require access to Private Data to perform those duties.",
-	section5_content1_2: "You can choose to share and publicly display your name, username, profile, demographic information, content and files, and geolocation data using the options made accessible through our services.",
-	section5_content1_3: "We will share transactional data with banking institutions and other organizations as required for processing payments, fraud protection, credit reduced risk, and perhaps other relevant financial services when you give payment data, such as when you make a purchase.",
-	section5_content1_4: "For instance, when we share similar computer networks and where access is required to deliver our services and run our business, we allow the sharing of Personal Information among our affiliates, subsidiaries, and associated businesses.",
-	section5_content1_5: "When we feel it's essential to do so in order to abide by the law or react to legitimate legal process, including that from law enforcement and perhaps other government entities, we will collect, disclose, and store Personally Identifiable information.",
-	section5_content1_6: "We will disclose data if:",
-	section5_content1_6_1: "We want to protect our clients and other people, for instance, by stopping spam or attempts at fraud or by working to stop any serious injuries or fatalities;",
-	section5_content1_6_2: "We want to protect against or stop an attack on our computer systems or networks, as well as to operate and maintain the security of our services; or",
-	section5_content1_6_3: "We want to enforce our agreements, conditions, and policies in order to safeguard our rights and the property of others as well as our own.",
-	section5_content2: "Through our website and apps, third-party analytics and advertising firms also gather Private Information, including IDs and device details (like cookie Identifiers, device IDs, and IP addresses), location tracking information, usage data, and conclusions drawn from and linked to that data, as detailed in the Cookies section of this declaration. These outside companies might mix this information from many websites to enhance analytics for both their own needs and those of others. For instance, Google Analytics is a tool we use on our website to better understand how users interact with it. You can find out more about Google's data collection and usage standards at <a href='www.google.com/policies/privacy/partners'>www.google.com/policies/privacy/partners</a>.",
+	section5_content1_label1: "Service Providers",
+	section5_content1_label1_text: "In order to accomplish the goals outlined in this statement, we divulge Private Data to vendors or agents acting on our behalf. For instance, businesses we've contracted with to support customer service or help safeguard and secure our services and systems may require access to Private Data to perform those duties.",
+	section5_content1_label2: "Disclosing information to Public",
+	section5_content1_label2_text: "You can choose to share and publicly display your name, username, profile, demographic information, content and files, and geolocation data using the options made accessible through our services.",
+	section5_content1_label3: "Financial Services",
+	section5_content1_label3_text: "We will share transactional data with banking institutions and other organizations as required for processing payments, fraud protection, credit reduced risk, and perhaps other relevant financial services when you give payment data, such as when you make a purchase.",
+	section5_content1_label4: "Affiliates",
+	section5_content1_label4_text: "For instance, when we share similar computer networks and where access is required to deliver our services and run our business, we allow the sharing of Personal Information among our affiliates, subsidiaries, and associated businesses.",
+	section5_content1_label5: "Legal",
+	section5_content1_label5_text: "When we feel it's essential to do so in order to abide by the law or react to legitimate legal process, including that from law enforcement and perhaps other government entities, we will collect, disclose, and store Personally Identifiable information.",
+	section5_content1_label6: "Security and Safety",
+	section5_content1_label6_text: "We will disclose data if:",
+	section5_content1_label6_text_l: "We want to protect our clients and other people, for instance, by stopping spam or attempts at fraud or by working to stop any serious injuries or fatalities;",
+	section5_content1_label6_text_2: "We want to protect against or stop an attack on our computer systems or networks, as well as to operate and maintain the security of our services; or",
+	section5_content1_label6_text_3: "We want to enforce our agreements, conditions, and policies in order to safeguard our rights and the property of others as well as our own.",
+	section5_content2: "Through our website and apps, third-party analytics and advertising firms also gather Private Information, including IDs and device details (like cookie Identifiers, device IDs, and IP addresses), location tracking information, usage data, and conclusions drawn from and linked to that data, as detailed in the Cookies section of this declaration. These outside companies might mix this information from many websites to enhance analytics for both their own needs and those of others. For instance, Google Analytics is a tool we use on our website to better understand how users interact with it. You can find out more about Google's data collection and usage standards at ",
+	section5_content2_googlelink:"www.google.com/policies/privacy/partners",
 	
 
 	section6_title: "Data Retention",
@@ -107,8 +114,10 @@ export default {
 	section6_content2: "The amount, natural order, and sensitivity of your personal data, the risk of harm from unauthorized use or disclosure, the aims for which we use your private data and whether we may accomplish those objectives through other means, and any applicable legal requirements will all be taken into account when determining the right time frame for your personal data.",
     
 	section7_title: "Choice and Control over Cookies",
-	section7_content1: "You have the option of receiving marketing communications from us via phone, mail, or email. If you wish to stop receiving promotional emails from us, you may accomplish this by following the instructions in the email or by getting in touch with us as stated in the section below on how to contact us. You can ask to be put on our do-not-call listing if we ever call you with a sales pitch. Certain informational communications, such as surveys and required service communications, are exempt from these options.",
-	section7_content2: "For options about cookies as well as other analytic and advertising controls, see the Cookies section.",
+	section7_content1_label: "Preference for Communication",
+	section7_content1_label_text: "You have the option of receiving marketing communications from us via phone, mail, or email. If you wish to stop receiving promotional emails from us, you may accomplish this by following the instructions in the email or by getting in touch with us as stated in the section below on how to contact us. You can ask to be put on our do-not-call listing if we ever call you with a sales pitch. Certain informational communications, such as surveys and required service communications, are exempt from these options.",
+	section7_content2_label: "Choices for Cookies",
+	section7_content2_label_text: "For options about cookies as well as other analytic and advertising controls, see the Cookies section.",
 	
 	section8_title: "Children under the age of 13 or 18 years",
 	section8_content1: "Please get in touch with us if you feel a child below the age of 13 or 18 has given Biomiid with Personal Data through the Service, and we'll do our best to remove the data from our records.",

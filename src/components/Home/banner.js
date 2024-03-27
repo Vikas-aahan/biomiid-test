@@ -6,6 +6,7 @@ import buttonImg from "../../Images/watch_video_white_1.png";
 import en from "../../lang/en";
 import rf from "../../lang/rf";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 export default function Banner() {
   const [lang, setLang] = React.useState("");
   
@@ -32,17 +33,19 @@ export default function Banner() {
             variant="contained"
             size="large"
             className={Style.banner_button_gettouch}
+            
           >
            {lang === "en"?en.header_left_button_text:rf.header_left_button_text}
           </Button></HashLink>
-          <Button
+          
+          <Link to="https://youtu.be/5Br9ozuOBak"><Button
             variant="outlined"
             size="large"
             className={Style.banner_button_watch}
           >
             <img style={{ width: "12%" }} src={buttonImg} /> &nbsp;&nbsp;
             {lang === "en"?en.header_right_button_text:rf.header_right_button_text}
-          </Button>
+          </Button></Link>
         </div>
       </Grid>
       <Grid lg={6} md={12} xs={12} className={Style.banner_grid_img}>

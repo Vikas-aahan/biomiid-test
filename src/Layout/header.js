@@ -25,8 +25,8 @@ import Popover from "@mui/material/Popover";
 import { Link } from "react-router-dom";
 import { CssBaseline, Select } from "@mui/material";
 
-function ResponsiveAppBar({page}) {
-  console.log("page==>",page);
+function ResponsiveAppBar({ page }) {
+  console.log("page==>", page);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -94,16 +94,15 @@ function ResponsiveAppBar({page}) {
                 width: "25%",
               }}
             >
-              {page !== "Home"? <Link
-              to="/"
-           >
-             <img style={{ width: "57%" }} src={logo} onClick={goToTop} />
-           </Link>: <HashLink
-           
-              >
-                <img style={{ width: "57%" }} src={logo} onClick={goToTop} />
-              </HashLink>}
-             
+              {page !== "Home" ? (
+                <Link to="/">
+                  <img style={{ width: "57%" }} src={logo} onClick={goToTop} />
+                </Link>
+              ) : (
+                <HashLink>
+                  <img style={{ width: "57%" }} src={logo} onClick={goToTop} />
+                </HashLink>
+              )}
             </Box>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -136,7 +135,7 @@ function ResponsiveAppBar({page}) {
               >
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" onClick={handleClick}>
-                  {lang === "en" ? en.section1_title10 : rf.section1_title10}
+                    {lang === "en" ? en.section1_title10 : rf.section1_title10}
                   </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
@@ -179,27 +178,19 @@ function ResponsiveAppBar({page}) {
                 justifyContent: "space-between",
               }}
             >
-              <img style={{ width: "40%" }} src={logo} />
+              <img style={{marginTop:"9px",width:"68%",height:"100%" }} src={logo} />
 
-              <FormControl sx={{ marginTop: "0rem" }}>
-                <NativeSelect
-                  sx={{ padding: "5px", color: "white", fontWeight: "600" }}
-                  onChange={handleLanguageChange}
-                  value={localStorage.getItem("language")}
+              <FormControl sx={{ mt: 1, minWidth: 80 ,border:"none"}} >
+                <Select
+                 className={Style.lan_change_hover_select}
+                 onChange={handleLanguageChange}
+                 value={localStorage.getItem("language")}
                 >
-                  <option
-                    style={{ fontSize: "20px", color: "black" }}
-                    value={"en"}
-                  >
-                    EN
-                  </option>
-                  <option
-                    style={{ fontSize: "20px", color: "black" }}
-                    value={"fr"}
-                  >
-                    FR
-                  </option>
-                </NativeSelect>
+                
+                  <MenuItem  value="en">EN</MenuItem>
+                  <MenuItem value="fr">FR</MenuItem>
+                
+                </Select>
               </FormControl>
             </Box>
             {/* <Box sx={{ display: { xs: "flex", md: "none" } }}> */}
@@ -254,15 +245,15 @@ function ResponsiveAppBar({page}) {
                         color: "#000066",
                         fontWeight: "600",
                         lineHeight: "38px",
-                        paddingLeft:"20px",
+                        paddingLeft: "20px",
                         "&:hover": {
                           backgroundColor: "#7F00FF", // Change this to your desired hover color
-                          color:"white"
+                          color: "white",
                         },
                       }}
                       onClick={handleClose}
                     >
-                       {lang === "en" ? en.section2_title : rf.section2_title}
+                      {lang === "en" ? en.section2_title : rf.section2_title}
                     </Typography>
                   </HashLink>
                   <HashLink
@@ -274,15 +265,15 @@ function ResponsiveAppBar({page}) {
                         color: "#000066",
                         fontWeight: "600",
                         lineHeight: "38px",
-                        paddingLeft:"20px",
+                        paddingLeft: "20px",
                         "&:hover": {
                           backgroundColor: "#7F00FF", // Change this to your desired hover color
-                          color:"white"
+                          color: "white",
                         },
                       }}
                       onClick={handleClose}
                     >
-                     {lang === "en" ? en.section4_title : rf.section4_title}
+                      {lang === "en" ? en.section4_title : rf.section4_title}
                     </Typography>
                   </HashLink>
                   <HashLink
@@ -294,10 +285,10 @@ function ResponsiveAppBar({page}) {
                         color: "#000066",
                         fontWeight: "600",
                         lineHeight: "38px",
-                        paddingLeft:"20px",
+                        paddingLeft: "20px",
                         "&:hover": {
                           backgroundColor: "#7F00FF", // Change this to your desired hover color
-                          color:"white"
+                          color: "white",
                         },
                       }}
                       onClick={handleClose}
@@ -314,15 +305,15 @@ function ResponsiveAppBar({page}) {
                         color: "#000066",
                         fontWeight: "600",
                         lineHeight: "38px",
-                        paddingLeft:"20px",
+                        paddingLeft: "20px",
                         "&:hover": {
                           backgroundColor: "#7F00FF", // Change this to your desired hover color
-                          color:"white"
+                          color: "white",
                         },
                       }}
                       onClick={handleClose}
                     >
-                       {lang === "en" ? en.section5_title : rf.section5_title}
+                      {lang === "en" ? en.section5_title : rf.section5_title}
                     </Typography>
                   </HashLink>
                   <Typography
@@ -343,11 +334,11 @@ function ResponsiveAppBar({page}) {
                         color: "#000066",
                         fontWeight: "600",
                         lineHeight: "50px",
-                        marginTop:"10px",
-                        paddingLeft:"20px",
+                        marginTop: "10px",
+                        paddingLeft: "20px",
                         "&:hover": {
                           backgroundColor: "#7F00FF", // Change this to your desired hover color
-                          color:"white"
+                          color: "white",
                         },
                       }}
                       onClick={handleClose}
@@ -435,9 +426,7 @@ function ResponsiveAppBar({page}) {
                     : rf.header_menu_contactus}
                 </HashLink>
               </Button>
-
-              <FormControl sx={{ marginTop: "1.5rem" }} >
-                <select
+              {/* <select
                   className={Style.lan_change_hover_select}
                   onChange={handleLanguageChange}
                   value={localStorage.getItem("language")}
@@ -449,7 +438,18 @@ function ResponsiveAppBar({page}) {
                   <option className={Style.lan_change_hover} value="fr">
                     FR
                   </option>
-                </select>
+                </select> */}
+              <FormControl sx={{ mt: 1, minWidth: 80 ,border:"none"}} >
+                <Select
+                 className={Style.lan_change_hover_select}
+                 onChange={handleLanguageChange}
+                 value={localStorage.getItem("language")}
+                >
+                
+                  <MenuItem  value="en">EN</MenuItem>
+                  <MenuItem value="fr">FR</MenuItem>
+                
+                </Select>
               </FormControl>
             </Box>
 
@@ -484,3 +484,6 @@ function ResponsiveAppBar({page}) {
   );
 }
 export default ResponsiveAppBar;
+// margin-top: 9px;
+//     width: 68%;
+//     height: 100%;

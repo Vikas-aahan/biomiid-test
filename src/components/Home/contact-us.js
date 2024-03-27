@@ -1236,7 +1236,8 @@ export default function ContactUs() {
   const { register, handleSubmit, reset } = useForm();
   const [phone, setPhone] = React.useState("");
   const [lang, setLang] = React.useState("");
-  
+
+ 
   React.useEffect(()=>{
    const lan = localStorage.getItem("language");
    setLang(lan);
@@ -1249,6 +1250,9 @@ export default function ContactUs() {
   };
 
   const onSubmit = async (value) => {
+   
+    const { timeZone } = Intl.DateTimeFormat().resolvedOptions();
+    console.log("timeZone===>",timeZone);
     const {
       companyName,
       firstName,
@@ -1268,7 +1272,7 @@ export default function ContactUs() {
         phoneNumber: phone,
         country: country,
         comment: comment,
-        deviceTimezone: client.getTimeZone(),
+        deviceTimezone: timeZone,
       };
       console.log("===>", data);
       let res = await postApihandler("/contact", data);
@@ -1277,7 +1281,7 @@ export default function ContactUs() {
         Swal.fire({
           position: "middle-centre",
           icon: "success",
-          title: "Contact Add Successfully",
+          title: lang === "en"? en.successfully_submited: rf.successfully_submited,
           showConfirmButton: false,
           timer: 3000,
         });   
@@ -1285,7 +1289,7 @@ export default function ContactUs() {
         Swal.fire({
           position: "middle-centre",
           icon: "error",
-          title: res.error.response.data.message,
+          title: lang === "en"?en.email_already_exist:rf.email_already_exist,
           showConfirmButton: false,
           timer: 3000,
         });   
@@ -1293,7 +1297,7 @@ export default function ContactUs() {
         Swal.fire({
           position: "middle-centre",
           icon: "error",
-          title: "Deny  access",
+          title: lang === "en"?en.access_deny:rf.access_deny,
           showConfirmButton: false,
           timer: 3000,
         }); 
@@ -1310,11 +1314,36 @@ export default function ContactUs() {
         country: country,
         comment: comment,
         companyName: companyName,
-        deviceTimezone: "Asia/Kolkata",
+        deviceTimezone: timeZone,
       };
       console.log("===>", data);
       let res = await postApihandler("/contact", data);
       console.log("res===>", res);
+      if(res.status === 200){
+        Swal.fire({
+          position: "middle-centre",
+          icon: "success",
+          title: lang === "en"?en.successfully_submited:rf.successfully_submited,
+          showConfirmButton: false,
+          timer: 3000,
+        });   
+      }else if(res.error.response.status === 410) {
+        Swal.fire({
+          position: "middle-centre",
+          icon: "error",
+          title: lang === "en"?en.email_already_exist:rf.email_already_exist,
+          showConfirmButton: false,
+          timer: 3000,
+        });   
+      } else if(res.error.response.status === 433){
+        Swal.fire({
+          position: "middle-centre",
+          icon: "error",
+          title: lang === "en"?en.access_deny:rf.access_deny,
+          showConfirmButton: false,
+          timer: 3000,
+        }); 
+      }
     }
   };
   return (
@@ -1322,7 +1351,7 @@ export default function ContactUs() {
       <br />
       <br />
     
-      <Typography className={Style.solution_heading_dif}>  {lang === "en"?en.section10_title:rf.section10_title}</Typography>
+      <Typography className={Style.solution_heading_dif}>   </Typography>
       <br />
       <br />
       <br />
@@ -1523,7 +1552,7 @@ export default function ContactUs() {
             </Grid>
 
             <FormControlLabel
-              sx={{ display: "flex" }}
+              sx={{ display: "flex",textAlign:"start" }}
               control={
                 <Checkbox
                 required
