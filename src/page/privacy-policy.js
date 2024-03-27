@@ -272,13 +272,13 @@ export default function PrivacyPolicy() {
      <FiberManualRecordIcon sx={{fontSize:"10px"}}/> {lang === "en"?ten.section5_content1_label6_text_3:Ren.section5_content1_label6_text_3}
      </Typography>
      <Typography className={Style.paragraph}>
-        {lang === "en"?ten.section5_content2:Ren.section5_content2}
-     </Typography>
-     <Link to="www.google.com/policies/privacy/partners">
-      <Typography className={Style.paragraph}>
+        {lang === "en"?ten.section5_content2:Ren.section5_content2} <Link to="www.google.com/policies/privacy/partners">
+     
         {lang === "en"?ten.section5_content2_googlelink:Ren.section5_content2_googlelink}
-     </Typography>
+    
      </Link>
+     </Typography>
+    
     
 
 
