@@ -1351,7 +1351,7 @@ export default function ContactUs() {
       <br />
       <br />
     
-      <Typography className={Style.solution_heading_dif}>   </Typography>
+      <Typography className={Style.solution_heading_dif}>{lang === "en"?en.section10_title:rf.section10_title}</Typography>
       <br />
       <br />
       <br />

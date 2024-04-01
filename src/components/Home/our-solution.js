@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Style from "../../Css/home.module.css";
 import { Button, Card, Grid, Typography } from "@mui/material";
 import idImg from "../../Images/illustration2.jpg";
@@ -13,9 +13,14 @@ import solutionImg from "../../Images/homePicture.png"
 import en from "../../lang/en";
 import rf from "../../lang/rf";
 import { HashLink } from "react-router-hash-link";
+import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
+import ModalVideo from "react-modal-video";
+import 'react-modal-video/scss/modal-video.scss'; 
 
 export default function OurSolution() {
   const [lang, setLang] = React.useState("");
+  const [isOpen, setOpen] = useState(false)
+  const [url, setUrl] = useState("")
   
      React.useEffect(()=>{
       const lan = localStorage.getItem("language");
@@ -48,48 +53,7 @@ export default function OurSolution() {
       </Typography>
       <img className={Style.solution_img} src={solutionImg} />
       
-      {/* <Grid container  className={Style.solution_outer_grid_card}>
-        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
-          <Card variant="outlined" className={Style.solution_card}>
-            <div style={{display:"flex",alignItems:"center"}}>
-              <img className={Style.solution_card_logo} src={idLogo} />{" "}&nbsp;&nbsp;
-              <Typography className={Style.solution_grid_head}>
-                eID Verification
-              </Typography>
-            </div>
-          </Card>
-        </Grid>
-        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
-          <Card variant="outlined" className={Style.solution_card}>
-            <div style={{display:"flex",alignItems:"center"}}>
-              <img className={Style.solution_card_logo} src={IdenLogo} />{" "}&nbsp;&nbsp;
-              <Typography className={Style.solution_grid_head}>
-              Identity Verification
-              </Typography>
-            </div>
-          </Card>
-        </Grid>
-        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
-          <Card variant="outlined" className={Style.solution_card}>
-            <div style={{display:"flex",alignItems:"center"}}>
-              <img className={Style.solution_card_logo} src={bioLogo} />{" "}&nbsp;&nbsp;
-              <Typography className={Style.solution_grid_head}>
-              Biometric Authentication
-              </Typography>
-            </div>
-          </Card>
-        </Grid>
-        <Grid lg={6} md={6} xs={12} className={Style.solution_grid_card}>
-          <Card variant="outlined" className={Style.solution_card}>
-            <div style={{display:"flex",alignItems:"center"}}>
-              <img className={Style.solution_card_logo} src={didnLogo} />{" "}&nbsp;&nbsp;
-              <Typography className={Style.solution_grid_head}>
-              Digital identity Network
-              </Typography>
-            </div>
-          </Card>
-        </Grid>
-      </Grid> */}
+     
       {/* <----------------------  Image/Text-Section -----------------> */}
      
       <div style={{scrollSnapAlign:"start"}} id="eId-verification" >
@@ -111,6 +75,7 @@ export default function OurSolution() {
             {lang === "en"?en.section2_content:rf.section2_content}
           </Typography>
           <br />
+          <div className={Style.button_outer_div}>
           <HashLink
               to="/#contact"
               style={{ textDecoration: "none" }}
@@ -123,6 +88,22 @@ export default function OurSolution() {
             {lang === "en"?en.section10_subtitle:rf.section10_subtitle}
           </Button>
           </HashLink>
+
+
+          <Button
+            variant="outlined"
+            size="large"
+            className={Style.button_watch_demo}
+             onClick={()=> {
+              setUrl("L-bBjk-KRBs")
+              setOpen(true)
+            }}
+          >
+            <PlayArrowOutlinedIcon sx={{fontSize:"36px"}} /> &nbsp;&nbsp;
+            {lang === "en"?en.view_the_demo:rf.view_the_demo}
+          </Button>
+         
+      </div>
         </Grid>
         <Grid lg={5} md={12} xs={12}>
           <img style={{ width: "100%" }} src={idImg} />
@@ -150,6 +131,7 @@ export default function OurSolution() {
            
           </Typography>
           <br />
+          <div className={Style.button_outer_div}>
           <HashLink
               to="/#contact"
               style={{ textDecoration: "none" }}
@@ -165,6 +147,22 @@ export default function OurSolution() {
             {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
           </HashLink>
+          
+
+          <Button
+            variant="outlined"
+            size="large"
+            className={Style.button_watch_demo}
+            onClick={()=> {
+              setUrl("uW_XdO0nGd0")
+              setOpen(true)
+            }}
+          >
+            <PlayArrowOutlinedIcon sx={{fontSize:"36px"}} /> &nbsp;&nbsp;
+            {lang === "en"?en.view_the_demo:rf.view_the_demo}
+          </Button>
+          </div>
+         
         </Grid>
       </Grid>
       <Grid container id="identity-verification">
@@ -186,6 +184,7 @@ export default function OurSolution() {
             
           </Typography>
           <br />
+          <div className={Style.button_outer_div}>
           <HashLink
               to="/#contact"
               style={{ textDecoration: "none" }}
@@ -201,6 +200,22 @@ export default function OurSolution() {
             {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
           </HashLink>
+          
+       
+          <Button
+            variant="outlined"
+            size="large"
+            className={Style.button_watch_demo}
+            onClick={()=> {
+              setUrl("4kFBc2o2FWU")
+              setOpen(true)
+            }}
+          >
+            <PlayArrowOutlinedIcon sx={{fontSize:"36px"}} /> &nbsp;&nbsp;
+            {lang === "en"?en.view_the_demo:rf.view_the_demo}
+          </Button>
+          </div>
+          
         </Grid>
         <Grid lg={6} md={12} xs={12}>
           <img style={{ width: "85%" }} src={IdenImg} />
@@ -232,6 +247,7 @@ export default function OurSolution() {
             
           </Typography>
           <br />
+          <div className={Style.button_outer_div}>
           <HashLink
               to="/#contact"
               style={{ textDecoration: "none" }}
@@ -247,9 +263,32 @@ export default function OurSolution() {
             {lang === "en"?en.section9_about_button_text:rf.section9_about_button_text}
           </Button>
           </HashLink>
+          
+         
+          <Button
+            variant="outlined"
+            size="large"
+            className={Style.button_watch_demo}
+            onClick={()=> {
+              setUrl("n4eIdbwKo8s")
+              setOpen(true)
+            }}
+          >
+            <PlayArrowOutlinedIcon sx={{fontSize:"36px"}} /> &nbsp;&nbsp;
+            {lang === "en"?en.view_the_demo:rf.view_the_demo}
+          </Button>
+          </div>
+          
         </Grid>
       </Grid>
       <div id="industries"></div>
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId={url}
+        onClose={() => setOpen(false)}
+      />
     </div>
   );
 }

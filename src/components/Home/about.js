@@ -138,6 +138,19 @@ export default function About() {
        
       </Typography>
       <br />
+      <br />
+      <HashLink
+              to="/#contact"
+              style={{ textDecoration: "none" }}
+            >
+      <Button  variant="contained" size="large" className={Style.About_button} >
+      {lang === "en"?en.section10_title:rf.section10_title}
+       
+      </Button>
+      </HashLink>
+      <br />
+      <br />
+      <br />
   
       <Typography className={Style.solution_heading_dif_head}>
       {lang === "en"?en.section9_subtitle2:rf.section9_subtitle2}

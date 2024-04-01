@@ -38,6 +38,15 @@
   border: solid !important;
   border-radius: 10px !important;
 }
+.button_watch_demo {
+  font-size: 20px !important;
+  color: #b266fd !important;
+  font-weight: 600 !important;
+  width: 16rem;
+  text-transform: none !important;
+  border: solid !important;
+  border-radius: 10px !important;
+}
 .banner_img {
   width: 75%;
 }
@@ -121,6 +130,10 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+.button_outer_div{
+  display: flex;
+    justify-content: space-around;
+}
 /* <--------------------- card-sections ---------------> */
 .Industries_card_head {
   font-size: 24px !important;
@@ -198,7 +211,7 @@
   font-size: 20px !important;
   background-color: #7f00ff !important ;
   font-weight: 600 !important;
-  width: 30%;
+  width: 25%;
   text-transform: none !important;
   padding: 12px !important;
   border-radius: 14px !important;
@@ -373,6 +386,13 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .button_outer_div{
+    display: contents;
+      
+  }
+  .button_watch_demo{
+    margin-top: 1rem !important;
+  }
   .solution_img{
     width: 100% ;
     margin-top: 6rem;

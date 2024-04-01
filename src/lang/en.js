@@ -144,7 +144,7 @@
 
 	successfully_submited:"Contact form has been submitted successfully",
 	email_already_exist:"This email address already exists",
-	access_deny:"You are not authorized to submit the contact form"
-
+	access_deny:"You are not authorized to submit the contact form",
+	view_the_demo:"Watch demo"
   }
   
