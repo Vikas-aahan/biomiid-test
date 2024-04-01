@@ -117,10 +117,10 @@ export default function OurSolution() {
             {lang === "en"?en.section3_title:rf.section3_title}
           </Typography>
         </Grid>
-        <Grid lg={6} md={12} xs={12}>
+        <Grid lg={5} md={12} xs={12}>
           <img style={{ width: "85%" }} src={bioImg} />
         </Grid>
-        <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
+        <Grid lg={7} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={bioLogo} />
           <Typography className={Style.solution_grid_head}>
           
@@ -173,7 +173,7 @@ export default function OurSolution() {
           </Typography>
         </Grid>
 
-        <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
+        <Grid lg={7} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={IdenLogo} />
           <Typography className={Style.solution_grid_head}>
            
@@ -217,7 +217,7 @@ export default function OurSolution() {
           </div>
           
         </Grid>
-        <Grid lg={6} md={12} xs={12}>
+        <Grid lg={5} md={12} xs={12}>
           <img style={{ width: "85%" }} src={IdenImg} />
         </Grid>
       </Grid>
@@ -229,10 +229,10 @@ export default function OurSolution() {
           </Typography>
         </Grid>
 
-        <Grid lg={6} md={12} xs={12} >
+        <Grid lg={5} md={12} xs={12} >
           <img  style={{ width: "85%" ,marginTop:"4rem"}} src={didnImg} />
         </Grid>
-        <Grid lg={6} md={12} xs={12} className={Style.solution_grid_text_outer}>
+        <Grid lg={7} md={12} xs={12} className={Style.solution_grid_text_outer}>
           <img style={{ width: "24%" }} src={didnLogo} />
           <Typography className={Style.solution_grid_head}>
           {lang === "en"?en.section5_subtitle:rf.section5_subtitle}

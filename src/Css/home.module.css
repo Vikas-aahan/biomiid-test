@@ -1,6 +1,6 @@
 .banner_outer_grid {
   margin-top: 4rem !important;
-  background-image: url('../Images/bg_picture_biomiid.png');
+  background-image: url("../Images/bg_picture_biomiid.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 5rem;
@@ -19,7 +19,6 @@
   color: white;
   font-size: 20px !important;
   text-align: start;
-
 }
 .banner_button_gettouch {
   font-size: 20px !important;
@@ -60,8 +59,8 @@
   margin-bottom: 1rem;
 }
 /* --------- Text banner bottom text --------- */
-.solution_img{
-  width: 50% ;
+.solution_img {
+  width: 50%;
   margin-top: 6rem;
   margin-bottom: 2rem;
 }
@@ -83,7 +82,6 @@
   text-align: center;
   font-weight: 600 !important;
   color: #000066 !important;
-
 }
 .solution_heading_dif_head {
   margin-top: 0rem !important;
@@ -101,7 +99,7 @@
 }
 .solution_grid_head {
   font-size: 28px !important;
- 
+
   color: #000066 !important;
   line-height: 30px !important;
 }
@@ -130,9 +128,9 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.button_outer_div{
+.button_outer_div {
   display: flex;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 /* <--------------------- card-sections ---------------> */
 .Industries_card_head {
@@ -216,7 +214,7 @@
   padding: 12px !important;
   border-radius: 14px !important;
 }
-.about_card{
+.about_card {
   padding: 1.5rem;
   height: 100%;
   width: 80%;
@@ -224,23 +222,22 @@
   border-color: #b266fd !important;
   border-radius: 20px !important;
 }
-.Individual_card_grid_outer{
+.Individual_card_grid_outer {
   margin-bottom: 6rem;
 }
 
 /* <---------------------  Contact section ----------------------> */
-.contact_card{
-    max-width: 50rem !important;
-     margin: auto  !important; 
-     padding-left: 8rem;
-     padding-right: 8rem;
-     border-radius: 50px !important;
-     border: solid 3px !important;
-     border-color: #d9d9d9db !important;
+.contact_card {
+  max-width: 50rem !important;
+  margin: auto !important;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  border-radius: 50px !important;
+  border: solid 3px !important;
+  border-color: #d9d9d9db !important;
 }
 .outer_div_contact {
   background-color: #f2f2f2;
- 
 }
 .contact_heading {
   margin-top: 1.5rem !important;
@@ -257,14 +254,14 @@
   line-height: 26px !important;
   margin-bottom: 2rem !important;
 }
-.contact_radio_outer{
+.contact_radio_outer {
   display: table-cell !important;
 }
-.contact_form_outer_grid{
+.contact_form_outer_grid {
   grid-row-gap: 1rem;
-    grid-column-gap: 4rem
+  grid-column-gap: 4rem;
 }
-.contact_button{
+.contact_button {
   font-size: 20px !important;
   background-color: #7f00ff !important ;
   font-weight: 600 !important;
@@ -274,7 +271,10 @@
   border-radius: 14px !important;
 }
 @media screen and (max-width: 1367px) {
-  
+  .solution_grid_text_outer {
+    text-align: start;
+    padding: 0rem;
+  }
   .banner_heading {
     margin-top: 1rem !important;
     font-size: 55px !important;
@@ -293,11 +293,14 @@
     padding: 2rem !important;
     border-radius: 14px !important;
   }
-
 }
 @media screen and (max-width: 1280px) {
+  .solution_grid_text_outer {
+    text-align: start;
+    padding: 0rem;
+  }
   .banner_outer_grid {
-    background-image: url('../Images/bg_picture_biomiid.png');
+    background-image: url("../Images/bg_picture_biomiid.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 4rem;
@@ -333,7 +336,7 @@
   }
   .solution_grid_head {
     font-size: 22px !important;
-    
+
     color: #000066 !important;
     line-height: 24px !important;
   }
@@ -366,7 +369,7 @@
   }
   .banner_button_watch {
     font-size: 20px !important;
-   
+
     color: white !important;
     font-weight: 600 !important;
     width: 16rem;
@@ -386,20 +389,19 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .button_outer_div{
+  .button_outer_div {
     display: contents;
-      
   }
-  .button_watch_demo{
+  .button_watch_demo {
     margin-top: 1rem !important;
   }
-  .solution_img{
-    width: 100% ;
+  .solution_img {
+    width: 100%;
     margin-top: 6rem;
     margin-bottom: 2rem;
   }
   .Individual_card_grid {
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-bottom: 0rem;
     display: flex;
     justify-content: space-around;
@@ -434,6 +436,7 @@
     font-size: 24px !important;
     color: #000066 !important;
     line-height: 24px !important;
+    text-align: start !important;
   }
   .banner_heading {
     margin-top: 6rem !important;
@@ -475,6 +478,7 @@
     padding-right: 0px !important;
     font-size: 19px !important;
     color: #686767 !important;
+    text-align: start;
   }
   .Industries_button {
     font-size: 16px !important;
@@ -482,11 +486,11 @@
     font-weight: 600 !important;
     width: 100%;
     text-transform: none !important;
-    padding: 2rem !important;
+    padding: 1rem !important;
     border-radius: 18px !important;
   }
   .Organizations_button {
-    font-size: 20px !important;
+    font-size: 16px !important;
     background-color: #7f00ff !important ;
     font-weight: 600 !important;
     width: 100%;
@@ -504,7 +508,7 @@
   }
   .banner_outer_grid {
     margin-top: 2rem !important;
-    background-image: url('../Images/background-mobile.png');
+    background-image: url("../Images/background-mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 2rem;
@@ -517,25 +521,29 @@
   .solution_grid_card {
     display: ruby;
   }
-  .contact_card{
+  .contact_card {
     max-width: 26rem !important;
-     margin: auto  !important; 
-     padding-left: 2rem;
-     padding-right: 2rem;
-     border-radius: 50px !important;
-     border: solid 3px !important;
-     border-color: #d9d9d9db !important;
+    margin: auto !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 50px !important;
+    border: solid 3px !important;
+    border-color: #d9d9d9db !important;
+  }
+  .About_button {
+    width: 60%;
+  }
 }
-}
+
 @media screen and (max-width: 400px) {
-  .solution_img{
-    width: 100% ;
+  .solution_img {
+    width: 100%;
     margin-top: 0rem;
     margin-bottom: 2rem;
   }
   .banner_outer_grid {
     margin-top: 0rem !important;
-    background-image: url('../Images/background-mobile.png');
+    background-image: url("../Images/background-mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 2rem;
@@ -585,7 +593,7 @@
   }
   .solution_grid_head {
     font-size: 18px !important;
-   
+
     color: #000066 !important;
   }
   .banner_heading {
@@ -613,13 +621,13 @@
     padding: 12px !important;
     border-radius: 14px !important;
   }
-  .contact_card{
+  .contact_card {
     max-width: 18rem !important;
-     margin: auto  !important; 
-     padding-left: 1rem;
-     padding-right: 1rem;
-     border-radius: 50px !important;
-     border: solid 3px !important;
-     border-color: #d9d9d9db !important;
-}
+    margin: auto !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 50px !important;
+    border: solid 3px !important;
+    border-color: #d9d9d9db !important;
+  }
 }
