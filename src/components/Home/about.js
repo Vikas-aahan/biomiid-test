@@ -31,6 +31,7 @@ export default function About() {
           marginTop: "8px",
           fontSize: "20px",
           lineHeight: "24px",
+          fontFamily: "Poppins"
         }}
       >
          {lang === "en"?en.section9_content1:rf.section9_content1}
@@ -42,6 +43,7 @@ export default function About() {
           marginTop: "10px",
           fontSize: "20px",
           lineHeight: "24px",
+          fontFamily: "Poppins"
         }}
       >
          {lang === "en"?en.section9_content2:rf.section9_content2}
@@ -53,6 +55,7 @@ export default function About() {
           marginTop: "10px",
           fontSize: "20px",
           lineHeight: "24px",
+          fontFamily: "Poppins"
         }}
       >
          {lang === "en"?en.section9_content23:rf.section9_content23}
@@ -76,7 +79,7 @@ export default function About() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,fontFamily: "Poppins"}}
             >
               {lang === "en"?en.section9_seffortless_content:rf.section9_seffortless_content}
              
@@ -91,7 +94,7 @@ export default function About() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",fontFamily: "Poppins" }}
             >
               {lang === "en"?en.section9_protection_content:rf.section9_protection_content}
              
@@ -106,7 +109,7 @@ export default function About() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",fontFamily: "Poppins" }}
             >
                {lang === "en"?en.section9_everyone_content:rf.section9_everyone_content}
             
@@ -121,6 +124,7 @@ export default function About() {
           marginTop: "",
           fontSize: "20px",
           lineHeight: "21px",
+          fontFamily: "Poppins"
         }}
       >
          {lang === "en"?en.section9_content24:rf.section9_content24}
@@ -132,6 +136,7 @@ export default function About() {
           marginTop: "8px",
           fontSize: "18px",
           lineHeight: "21px",
+          fontFamily: "Poppins"
         }}
       >
           {lang === "en"?en.section9_content3:rf.section9_content3}
@@ -163,6 +168,7 @@ export default function About() {
           fontSize: "20px",
           lineHeight: "26px",
           marginBottom: "5rem",
+          fontFamily: "Poppins"
         }}
       >
          {lang === "en"?en.section9_content4:rf.section9_content4}

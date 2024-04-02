@@ -31,7 +31,7 @@ export default function Industries() {
         
       </Typography>
       <Typography
-        sx={{ textAlign: "start", fontSize: "28px" }}
+        sx={{ textAlign: "start", fontSize: "28px",fontFamily: "Poppins" }}
       >
        {lang === "en"?en.section6_content:rf.section6_content}
       
@@ -46,7 +46,7 @@ export default function Industries() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,fontFamily: "Poppins"}}
             > {lang === "en"?en.section6_government_content:rf.section6_government_content}
              
             </Typography>
@@ -60,7 +60,7 @@ export default function Industries() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",fontFamily: "Poppins" }}
             > {lang === "en"?en.section6_financial_content:rf.section6_financial_content}
              
             </Typography>
@@ -74,7 +74,7 @@ export default function Industries() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",fontFamily: "Poppins" }}
             >        
           {lang === "en"?en.section6_health_content:rf.section6_health_content}
               
@@ -89,7 +89,7 @@ export default function Industries() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,fontFamily: "Poppins"}}
             >  {lang === "en"?en.section6_retail_content:rf.section6_retail_content}
              
             </Typography>
@@ -103,7 +103,7 @@ export default function Industries() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,fontFamily: "Poppins"}}
             >  
             {lang === "en"?en.section6_travel_content:rf.section6_travel_content}
              
@@ -118,7 +118,7 @@ export default function Industries() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,fontFamily: "Poppins" }}
             >{lang === "en"?en.section6_sharing_content:rf.section6_sharing_content}
              
             </Typography>

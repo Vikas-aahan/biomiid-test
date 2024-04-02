@@ -59,7 +59,7 @@ export default function Organization() {
             
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                {lang === "en"?en.section8_fraud_content:rf.section8_fraud_content}
              
@@ -74,7 +74,7 @@ export default function Organization() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                {lang === "en"?en.section8_account_content:rf.section8_account_content}
              
@@ -89,7 +89,7 @@ export default function Organization() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                  {lang === "en"?en.section8_document_content:rf.section8_document_content}
               
@@ -104,7 +104,7 @@ export default function Organization() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                 {lang === "en"?en.section8_onboarding_content:rf.section8_onboarding_content}
               
@@ -119,7 +119,7 @@ export default function Organization() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                {lang === "en"?en.section8_compiliance_content:rf.section8_compiliance_content}
               
@@ -134,7 +134,7 @@ export default function Organization() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                 {lang === "en"?en.section8_conversion_content:rf.section8_conversion_content}
              
@@ -149,7 +149,7 @@ export default function Organization() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                 {lang === "en"?en.section8_protection_content:rf.section8_protection_content}
              
@@ -164,7 +164,7 @@ export default function Organization() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
                {lang === "en"?en.section8_privacy_content:rf.section8_privacy_content}
              
@@ -179,7 +179,7 @@ export default function Organization() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "18px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
               {lang === "en"?en.section8_interoperability_content:rf.section8_interoperability_content}
               
@@ -194,21 +194,21 @@ export default function Organization() {
       {lang === "en"?en.section8_subtitle3:rf.section8_subtitle3}
        
       </Typography>
-      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
+      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px",fontFamily: "Poppins"}}>
       {lang === "en"?en.section8_content2:rf.section8_content2}
         
       </Typography>
-      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
+      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px",fontFamily: "Poppins"}}>
       {lang === "en"?en.section8_content3:rf.section8_content3}
         
       </Typography>
       
-      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
+      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px",fontFamily: "Poppins"}}>
       {lang === "en"?en.section8_content4:rf.section8_content4}
         
       </Typography>
      
-      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}>
+      <Typography sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px",fontFamily: "Poppins"}}>
       {lang === "en"?en.section8_content5:rf.section8_content5}
         
       </Typography>

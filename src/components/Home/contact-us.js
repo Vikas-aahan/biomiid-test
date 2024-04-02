@@ -1562,7 +1562,7 @@ export default function ContactUs() {
               }
               label= {lang === "en"?en.section10_agreement1:rf.section10_agreement1}
             />
-            <Typography sx={{ textAlign: "start" }}>
+            <Typography sx={{ textAlign: "start" ,fontFamily:"Poppins"}}>
             {lang === "en"?en.section10_agreement2:rf.section10_agreement2}
                &nbsp;
               <Link to="/privacy-policy" style={{textDecoration:"none"}}><span style={{ color: "cornflowerblue" }}>{lang === "en"?en.section10_privacy_policy:rf.section10_privacy_policy}</span></Link>

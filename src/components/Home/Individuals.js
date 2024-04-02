@@ -44,7 +44,7 @@ export default function Individuals() {
            
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px",fontFamily: "Poppins"}}
             >
               {lang === "en"?en.section7_sovereignty_content:rf.section7_sovereignty_content}
             
@@ -59,7 +59,7 @@ export default function Individuals() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px" ,fontFamily: "Poppins"}}
             > {lang === "en"?en.section7_financial_content:rf.section7_financial_content}
              
             </Typography>
@@ -73,7 +73,7 @@ export default function Individuals() {
             
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",lineHeight:"24px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",lineHeight:"24px" ,fontFamily: "Poppins"}}
             > 
             {lang === "en"?en.section7_control_content:rf.section7_control_content}
              
@@ -88,7 +88,7 @@ export default function Individuals() {
               
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",lineHeight:"24px" }}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px",lineHeight:"24px" ,fontFamily: "Poppins"}}
             >{lang === "en"?en.section7_protection_content:rf.section7_protection_content}
              
             </Typography>
@@ -102,7 +102,7 @@ export default function Individuals() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px" ,fontFamily: "Poppins"}}
             > {lang === "en"?en.section7_access_content:rf.section7_access_content}
              
             </Typography>
@@ -116,7 +116,7 @@ export default function Individuals() {
              
             </Typography>
             <Typography
-              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px"}}
+              sx={{ textAlign: "start", marginTop: "12px", fontSize: "20px" ,lineHeight:"24px" ,fontFamily: "Poppins"}}
             > {lang === "en"?en.section7_effortless_content:rf.section7_effortless_content}
             
             </Typography>
